@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linkedList on ArBlog</title>
+    <link>http://example.org/tags/linkedlist/</link>
+    <description>Recent content in linkedList on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 -0005</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/linkedlist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>206.Reverse Linked List</title>
+      <link>http://example.org/posts/leetcode-206.reverse-linked-list/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 -0005</pubDate>
+      
+      <guid>http://example.org/posts/leetcode-206.reverse-linked-list/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively func reverseList(head *ListNode) *ListNode { var pre *ListNode for head != nil { head, pre, head.Next = head.Next, head, pre } // for head != nil { // temp:=head.Next // head.Next = pre // pre = head // head = temp //} return pre } 时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  recursively func reverseList(head *ListNode) *ListNode { if head == nil || head.</description>
+    </item>
+    
+    <item>
+      <title>92.Reverse Linked List II (part)</title>
+      <link>http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 -0004</pubDate>
+      
+      <guid>http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
+      <description>recursively 反转链表前 N 个节点  func reverseList(head *ListNode, n int) *ListNode { var successor *ListNode if n == 1 { successor = head.next return head } pre:=reverseList(head.Next,n-1) head.Next.Next = head head.Next = successor return pre } 时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。  Reverse a linked list from position m to n /** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func reverseBetween(head *ListNode, m int, n int) *ListNode { if m == 1 { return reverseN(head, n) } head.</description>
+    </item>
+    
+  </channel>
+</rss>
