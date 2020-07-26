@@ -1,23 +1,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArBlog</title>
-    <link>http://example.org/</link>
+    <link>https://arboat.github.io/</link>
     <description>Recent content on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Jul 2020 00:00:00 -0006</lastBuildDate>
     
-        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://arboat.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>283.Move Zeroes</title>
-        <link>http://example.org/posts/leetcode-283.move-zeroes/</link>
+        <link>https://arboat.github.io/posts/leetcode-283.move-zeroes/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 -0006</pubDate>
         
-        <guid>http://example.org/posts/leetcode-283.move-zeroes/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-283.move-zeroes/ -&lt;h1 id=&#34;双指针-复制到第一个零的位置并置零&#34;&gt;双指针 复制到第一个零的位置，并置零&lt;/h1&gt;
+        <guid>https://arboat.github.io/posts/leetcode-283.move-zeroes/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-283.move-zeroes/ -&lt;h1 id=&#34;双指针-复制到第一个零的位置并置零&#34;&gt;双指针 复制到第一个零的位置，并置零&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度:O(1)&lt;/li&gt;
@@ -50,18 +50,18 @@
                 if i != j:
                     nums[i] = 0
                 j+=1&lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-283.move-zeroes/ - </description>
+- https://arboat.github.io/posts/leetcode-283.move-zeroes/ - </description>
         </item>
     
     
     
         <item>
         <title>206.Reverse Linked List</title>
-        <link>http://example.org/posts/leetcode-206.reverse-linked-list/</link>
+        <link>https://arboat.github.io/posts/leetcode-206.reverse-linked-list/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 -0005</pubDate>
         
-        <guid>http://example.org/posts/leetcode-206.reverse-linked-list/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-206.reverse-linked-list/ -&lt;pre&gt;&lt;code&gt;/**
+        <guid>https://arboat.github.io/posts/leetcode-206.reverse-linked-list/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-206.reverse-linked-list/ -&lt;pre&gt;&lt;code&gt;/**
  * Definition for singly-linked list.
  * type ListNode struct {
  *     Val int
@@ -99,18 +99,18 @@ return pre
 时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。
 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。
 &lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-206.reverse-linked-list/ - </description>
+- https://arboat.github.io/posts/leetcode-206.reverse-linked-list/ - </description>
         </item>
     
     
     
         <item>
         <title>92.Reverse Linked List II (part)</title>
-        <link>http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/</link>
+        <link>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 -0004</pubDate>
         
-        <guid>http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+        <guid>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
 &lt;h2 id=&#34;反转链表前-n-个节点&#34;&gt;反转链表前 N 个节点&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt; func reverseList(head *ListNode, n int) *ListNode {
     var successor *ListNode
@@ -182,18 +182,18 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
     }
     return dummy.Next
 }&lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-92.reverse-linked-list-ii-part/ - </description>
+- https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/ - </description>
         </item>
     
     
     
         <item>
         <title>70.Climbing Stairs</title>
-        <link>http://example.org/posts/leetcode-70.climbing-stairs/</link>
+        <link>https://arboat.github.io/posts/leetcode-70.climbing-stairs/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 -0003</pubDate>
         
-        <guid>http://example.org/posts/leetcode-70.climbing-stairs/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-70.climbing-stairs/ -&lt;p&gt;分析可得本题为Fibonacci sequence&lt;/p&gt;
+        <guid>https://arboat.github.io/posts/leetcode-70.climbing-stairs/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-70.climbing-stairs/ -&lt;p&gt;分析可得本题为Fibonacci sequence&lt;/p&gt;
 &lt;p&gt;用通项公式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(log n)&lt;/li&gt;
@@ -226,18 +226,18 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
             r=p+q
             i+=1
         return r&lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-70.climbing-stairs/ - </description>
+- https://arboat.github.io/posts/leetcode-70.climbing-stairs/ - </description>
         </item>
     
     
     
         <item>
         <title>11.ContainerWIthMostWater</title>
-        <link>http://example.org/posts/leetcode-11.containerwithmostwater/</link>
+        <link>https://arboat.github.io/posts/leetcode-11.containerwithmostwater/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 -0001</pubDate>
         
-        <guid>http://example.org/posts/leetcode-11.containerwithmostwater/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-11.containerwithmostwater/ -&lt;h2 id=&#34;暴力法&#34;&gt;暴力法&lt;/h2&gt;
+        <guid>https://arboat.github.io/posts/leetcode-11.containerwithmostwater/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-11.containerwithmostwater/ -&lt;h2 id=&#34;暴力法&#34;&gt;暴力法&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 O(N^2)&lt;/li&gt;
 &lt;li&gt;空间复杂度 O(1)&lt;/li&gt;
@@ -309,18 +309,18 @@ func min(a,b int) int {
                 i+=1
         return m
 &lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-11.containerwithmostwater/ - </description>
+- https://arboat.github.io/posts/leetcode-11.containerwithmostwater/ - </description>
         </item>
     
     
     
         <item>
         <title>1.Two Sum</title>
-        <link>http://example.org/posts/leetcode-1.two-sum.md/</link>
+        <link>https://arboat.github.io/posts/leetcode-1.two-sum.md/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://example.org/posts/leetcode-1.two-sum.md/</guid>
-        <description>ArBlog http://example.org/posts/leetcode-1.two-sum.md/ -&lt;h1 id=&#34;哈希表&#34;&gt;哈希表&lt;/h1&gt;
+        <guid>https://arboat.github.io/posts/leetcode-1.two-sum.md/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-1.two-sum.md/ -&lt;h1 id=&#34;哈希表&#34;&gt;哈希表&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(n)&lt;/li&gt;
@@ -353,7 +353,7 @@ func min(a,b int) int {
                 return [dic[v2],k1]
             dic[v1]=k1
         return {}&lt;/code&gt;&lt;/pre&gt;
-- http://example.org/posts/leetcode-1.two-sum.md/ - </description>
+- https://arboat.github.io/posts/leetcode-1.two-sum.md/ - </description>
         </item>
     
     
