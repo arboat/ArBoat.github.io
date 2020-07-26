@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>1.Two Sum</title>
+<title>Archives</title>
 
 
 
@@ -10,7 +10,7 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="array">
+<meta name="description" content="">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
@@ -51,10 +51,6 @@
 
 
 
-  
-    <script src="https://arboat.github.io//js/toc-collapse.js"></script>
-  
-
 
 
 
@@ -85,9 +81,11 @@
             
             
             
+                
             
             
-            <a class="a-block nav-link-item false" href="/archives">
+            
+            <a class="a-block nav-link-item active" href="/archives">
                 Archive
             </a>
             
@@ -133,42 +131,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 </div><div ref="extraContainer" class="extra-container">
     
     
-    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- 目录 -</center>
-		
-		
-		<ul>
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#%e5%93%88%e5%b8%8c%e8%a1%a8" onclick="onNavClick(`#哈希表-nav`)" id="哈希表-nav">
-									哈希表
-								</a>
-							</li>
-						
-						
-					
-				
-			
-		</ul>
-	</div>
-
-</div>
-    
     <div class="pagination">
         <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
             <i class="material-icons pagination-action-icon">
@@ -186,6 +148,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
         </a>
         
         
+        
+        
     </div>
 </div><div class="single-column-drawer-container" ref="drawer"
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
@@ -197,9 +161,11 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 
                 
                 
+                    
                 
                 
-                <a class="a-block drawer-menu-item false" href="/archives">
+                
+                <a class="a-block drawer-menu-item active" href="/archives">
                     Archive
                 </a>
                 
@@ -224,42 +190,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                 </a>
                 
             
-            
-            <div class="toc">
-
-
-	<div class="toc-content">
-	
-		
-		
-		
-		<center>- 目录 -</center>
-		
-		
-		<ul>
-			
-				
-				
-					
-						
-						
-						
-						
-						
-							<li>
-								<a href="#%e5%93%88%e5%b8%8c%e8%a1%a8" onclick="onNavClick(`#哈希表-nav`)" id="哈希表-nav">
-									哈希表
-								</a>
-							</li>
-						
-						
-					
-				
-			
-		</ul>
-	</div>
-
-</div>
             
         </div>
     </div>
@@ -303,130 +233,27 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
             <div id="content">
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
-        <div class="post">
-            
-            
-            
-
-            <div class="post-head-wrapper-text-only"
-                
-            >
-                <div class="post-title">
-                    1.Two Sum
-                    
-                    <div class="post-subtitle">
-                        array
-                    </div>
-                    
-                    <div class="post-meta">
-                        
-                        <time itemprop="datePublished">
-                            2020-07-21 00:00
-                        </time>
-                        
-
-                        
-                            <i class="material-icons" style="">folder</i>
-                                <a href="/categories/leetcode">LeetCode</a>
-                                &nbsp;
-                        
-
-                        
-                            <i class="material-icons" style="">label</i>
-                            
-                                <a href="/tags/array">array</a>
-                                &nbsp;
-                            
-                        
-                        
-                            <i class="material-icons" style="">schedule</i>
-                            
-
-                            
-                            
-
-                            
-                            38 s.
-                        
+        <a class="a-block">
+            <div class="post-item-wrapper post-item-wrapper-no-hover">
+                <div class="post-item post-item-no-gaps">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title post-item-title-small">
+                            Archives
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="post-body-wrapper">
-                
-                <div class="post-body" v-pre>
-                
-                    <h1 id="哈希表">哈希表</h1>
-<ul>
-<li>时间复杂度：O(n)</li>
-<li>空间复杂度：O(n)</li>
-</ul>
-<p>Go：</p>
-<pre><code>func twoSum(nums []int, target int) []int {
-    m:=make(map[int]int)          // nums 的v作为map的k，k作为map的v
-    for k1,v1 := range nums {
-        v2:=target - v1
-        if _,ok := m[v2]; ok {
-            return []int{m[v2],k1}  //已存在的是已经先存入map的，所以在前
-        }
-        m[v1] = k1
-    }
-    return nil
-}
-</code></pre>
-<p>Python:</p>
-<pre><code>class Solution(object):
-    def twoSum(self, nums, target):
-        &quot;&quot;&quot;
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        &quot;&quot;&quot;
-        dic = {}
-        for k1,v1 in enumerate(nums):  // k,v 遍历
-            v2 = target - v1
-            if v2 in dic:
-                return [dic[v2],k1]
-            dic[v1]=k1
-        return {}</code></pre>
-
-                    
-                    <HR width="100%" id="EOF">
-		    <p style="color:#777;">最后修改于 2020-07-21</p>
-                    
-                </div>
-            </div>
-            
-            
-            <nav class="post-pagination">
-
-                
-                <a class="newer-posts" href="https://arboat.github.io/posts/leetcode-11.containerwithmostwater/">
-			下回<br>11.ContainerWIthMostWater
-                </a>
-                
-                
-                
-                <a class="older-posts">
-			上回<br>这是最旧的文章了。
-                </a>
-                
-            </nav>
-            <div class="post-comment-wrapper">
-                
-
-
-
-
-
-
-
-            </div>
-        </div>
+        </a>
+        
+        
     </div>
 </div>
 
-            </div><div id="single-column-footer">
+
+            </div>
+
+
+<div id="single-column-footer">
 Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
 <br>
 移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
