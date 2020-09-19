@@ -36,11 +36,11 @@
 
 
 
-<link rel="stylesheet" href="https://arboat.github.io/scss/journal.min.47aa1ffb60880ad8c72feecd6962a14331eca7a7a30e08354a1ca91009b8bc5b.css" integrity="sha256-R6of&#43;2CICtjHL&#43;7NaWKhQzHsp6ejDgg1ShypEAm4vFs=" media="screen">
+<link rel="stylesheet" href="https://arboat.github.io/scss/journal.min.c116bc90d171283f099f173854157ec8f183f9073b93443b2c8ad82899ee9025.css" integrity="sha256-wRa8kNFxKD8Jnxc4VBV&#43;yPGD&#43;Qc7k0Q7LIrYKJnukCU=" media="screen">
 
 
 
-<link rel="stylesheet" href="https://arboat.github.io/scss/dark-mode.min.832f90e2bc07191c85a3b6c0310607f539897546b1126dd04df64aff22316ecd.css" integrity="sha256-gy&#43;Q4rwHGRyFo7bAMQYH9TmJdUaxEm3QTfZK/yIxbs0=" media="screen">
+<link rel="stylesheet" href="https://arboat.github.io/scss/dark-mode.min.552aae4638a84aa57cf0b195750a49ea9131d3bb621d1ed3ebc9b14b18166536.css" integrity="sha256-VSquRjioSqV88LGVdQpJ6pEx07tiHR7T68mxSxgWZTY=" media="screen">
 
 
 <script src="https://arboat.github.io//js/loadCSS.js"></script>
@@ -64,7 +64,8 @@
 
 
 
-</head><body>
+</head>
+<body>
     	<div id="app"><div ref="sideContainer" class="side-container">
     
     <a class="a-block nav-head false" href="https://arboat.github.io/">
@@ -155,10 +156,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 						
-							
-								<ul class="collapse" data-toggle="collapse">
-							
-						
 						
 							<li>
 								<a href="#iteratively" onclick="onNavClick(`#iteratively-nav`)" id="iteratively-nav">
@@ -211,7 +208,8 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
         
         
     </div>
-</div><div class="single-column-drawer-container" ref="drawer"
+</div>
+<div class="single-column-drawer-container" ref="drawer"
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
     <div class="drawer-content">
         <div class="drawer-menu">
@@ -270,10 +268,6 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 						
 						
 						
-						
-							
-								<ul class="collapse" data-toggle="collapse">
-							
 						
 						
 							<li>
@@ -348,6 +342,7 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 
     </a>
 </div>
+
             <div id="content">
 <div ref="streamContainer" class="stream-container">
     <div class="post-list-container post-list-container-shadow">
@@ -385,6 +380,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                                 <a href="/tags/linkedlist">linkedList</a>
                                 &nbsp;
                             
+                                <a href="/tags/recursion">recursion</a>
+                                &nbsp;
+                            
                         
                         
                             <i class="material-icons" style="">schedule</i>
@@ -394,7 +392,9 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
                             
 
                             
-                            57 s.
+                            1 min
+                            
+                            16 s.
                         
                     </div>
                 </div>
@@ -412,7 +412,12 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
  * }
  */
 </code></pre>
-<h2 id="iteratively">iteratively</h2>
+<h1 id="iteratively">iteratively</h1>
+<ul>
+<li>时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。</li>
+<li>空间复杂度：O(1)。</li>
+</ul>
+<p>Go:</p>
 <pre><code>func reverseList(head *ListNode) *ListNode {
     var pre *ListNode
     for head != nil {
@@ -426,10 +431,25 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
     //}
     return pre
 }
-时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。
-空间复杂度：O(1)。
 </code></pre>
-<h2 id="recursively">recursively</h2>
+<p>Pyhton:</p>
+<pre><code>class Solution:
+    def reverseList(self, head: ListNode) -&gt; ListNode:
+        prev = None
+        while head:
+           # head,prev,head=head.next,head,prev
+           temp = head.next
+           head.next = prev
+           prev = head
+           head = temp
+        return prev
+</code></pre>
+<h1 id="recursively">recursively</h1>
+<ul>
+<li>时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。</li>
+<li>空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。</li>
+</ul>
+<p>Go:</p>
 <pre><code>func reverseList(head *ListNode) *ListNode {
 if head == nil || head.Next == nil {
     return head
@@ -439,9 +459,20 @@ head.Next.Next = head
 head.Next = nil
 return pre
 }
-时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。
-空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。
 </code></pre>
+<p>Pyhton:</p>
+<pre><code>class Solution(object):
+    def reverseList(self, head):
+        &quot;&quot;&quot;
+        :type head: ListNode
+        :rtype: ListNode
+        &quot;&quot;&quot;
+        prev = None
+        if head == None or head.next == None: return head
+        prev = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return prev</code></pre>
 
                     
                     <HR width="100%" id="EOF">
@@ -460,8 +491,8 @@ return pre
                 
                 
                 
-                <a class="older-posts" href="https://arboat.github.io/posts/leetcode-283.move-zeroes/">
-			上回<br>283.Move Zeroes
+                <a class="older-posts" href="https://arboat.github.io/posts/leetcode-24.swap-nodes-in-pairs/">
+			上回<br>24.Swap Nodes in Pairs
                 </a>
                 
             </nav>

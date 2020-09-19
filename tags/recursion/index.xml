@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recursion on ArBlog</title>
+    <link>https://arboat.github.io/tags/recursion/</link>
+    <description>Recent content in recursion on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://arboat.github.io/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>206.Reverse Linked List</title>
+      <link>https://arboat.github.io/posts/leetcode-206.reverse-linked-list/</link>
+      <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-206.reverse-linked-list/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively  时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  Go:
+func reverseList(head *ListNode) *ListNode { var pre *ListNode for head != nil { head, pre, head.Next = head.Next, head, pre } // for head != nil { // temp:=head.Next // head.Next = pre // pre = head // head = temp //} return pre }  Pyhton:</description>
+    </item>
+    
+    <item>
+      <title>24.Swap Nodes in Pairs</title>
+      <link>https://arboat.github.io/posts/leetcode-24.swap-nodes-in-pairs/</link>
+      <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-24.swap-nodes-in-pairs/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively  时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  Go:
+func swapPairs(head *ListNode) *ListNode { guard:=&amp;amp;ListNode{Next:head} temp:=guard for temp.Next != nil &amp;amp;&amp;amp; temp.Next.Next != nil { first := temp.Next second := temp.Next.Next temp.Next = second first.Next = second.Next second.Next = first temp = first // 已经交换为第二个 } return guard.Next }  Pyhton:</description>
+    </item>
+    
+    <item>
+      <title>25.Reverse Nodes in k-Group</title>
+      <link>https://arboat.github.io/posts/leetcode-25.reverse-nodes-in-k-group/</link>
+      <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-25.reverse-nodes-in-k-group/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  recursively  时间复杂度为 O(n*K)最好的情况为 O(n) 最差的情况未 O(n^2) 空间复杂度：O(1)，除了几个必须的节点指针外，并没有占用其他空间  Go:
+ func reverseKGroup(head *ListNode, k int) *ListNode { dummy:= &amp;amp;ListNode{Next:head} //point 1 pre:=dummy //point 2 for head != nil { tail:=pre //point 3 for i:=0;i&amp;lt;k;i++{ tail = tail.Next if tail == nil { return dummy.Next } } temp:=tail.Next head, tail = reverse(head,tail) pre.</description>
+    </item>
+    
+    <item>
+      <title>102.Binary Tree Level Order Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-102.binary-tree-level-order-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-102.binary-tree-level-order-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func postorderTraversal(root *TreeNode) []int { res=make([]int,0) postoder(root) return res } func postoder(root *TreeNode) { if root != nil { postoder(root.Left) postoder(root.Right) res=append(res,root.Val) } } // 两次append func postorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append(postorderTraversal(root.</description>
+    </item>
+    
+    <item>
+      <title>104.Maximum Depth of Binary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-104.maximum-depth-of-binary-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-104.maximum-depth-of-binary-tree/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(height) 树的高度  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func maxDepth(root *TreeNode) int { if root == nil { return 0 } return max(maxDepth(root.Left),maxDepth(root.Right)) + 1 } func max(a,b int) int { if a &amp;gt; b { return a } return b } </description>
+    </item>
+    
+    <item>
+      <title>105.Construct Binary Tree from Preorder and Inorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-105.construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-105.construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode { for root!=nil { switch { case p.Val &amp;gt; root.Val &amp;amp;&amp;amp; q.Val &amp;gt; root.Val: root = root.Right case p.Val &amp;lt; root.Val &amp;amp;&amp;amp; q.Val &amp;lt; root.Val: root = root.Left default: return root } } return nil } </description>
+    </item>
+    
+    <item>
+      <title>111.Minimum Depth of Binary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-111.minimum-depth-of-binary-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-111.minimum-depth-of-binary-tree/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func minDepth(root *TreeNode) int { if root == nil { return 0 } l := minDepth(root.Left) r := minDepth(root.Right) // 只有一个叶子节点 要返回另一边 if root.Left == nil { return r+1 } if root.Right == nil { return l+1 } return min(l, r) + 1 } func min(a, b int) int { if a &amp;lt; b { return a } return b } </description>
+    </item>
+    
+    <item>
+      <title>144.Binary Tree Preorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-144.binary-tree-preorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-144.binary-tree-preorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func preorderTraversal(root *TreeNode) []int { res = make([]int,0) preorder(root) return res } func preorder(root *TreeNode){ if root != nil { res = append(res,root.Val) preorder(root.Left) preorder(root.Right) } } // 两次append func preorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append([]int{root.</description>
+    </item>
+    
+    <item>
+      <title>145.Binary Tree Postorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-145.binary-tree-postorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-145.binary-tree-postorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func postorderTraversal(root *TreeNode) []int { res=make([]int,0) postoder(root) return res } func postoder(root *TreeNode) { if root != nil { postoder(root.Left) postoder(root.Right) res=append(res,root.Val) } } // 两次append func postorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append(postorderTraversal(root.</description>
+    </item>
+    
+    <item>
+      <title>21. Merge Two Sorted Lists</title>
+      <link>https://arboat.github.io/posts/leetcode-21.merge-two-sorted-lists/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-21.merge-two-sorted-lists/</guid>
+      <description>递归 recursion  时间复杂度：O(n+m) 空间复杂度：O(n+m)  Go:
+/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode { if l1 == nil { return l2 } else if l2 == nil { return l1 } else if l1.Val &amp;lt; l2.Val { l1.Next = mergeTwoLists(l1.Next,l2) return l1 } else { l2.Next = mergeTwoLists(l1,l2.Next) return l2 } }  Python:</description>
+    </item>
+    
+    <item>
+      <title>22.Generate Parentheses</title>
+      <link>https://arboat.github.io/posts/leetcode-22.generate-parentheses/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-22.generate-parentheses/</guid>
+      <description>递归 recursion  时间复杂度：O(2^n) 空间复杂度：O(n)  Go:
+var res []string func generateParenthesis(n int) []string { res = make([]string,0) genetate(0,0,n,&amp;quot;&amp;quot;) return res } func genetate(left,right, max int, s string){ if left == max &amp;amp;&amp;amp; right == max { res = append(res,s) return } if left &amp;lt; max { genetate(left+1, right, max, s+&amp;quot;(&amp;quot;) } if right &amp;lt; left { genetate(left, right+1, max, s+&amp;quot;)&amp;quot;) } }  </description>
+    </item>
+    
+    <item>
+      <title>226.Invert Binary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-226.invert-binary-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-226.invert-binary-tree/</guid>
+      <description>递归 recursion  时间复杂度：O(n) 空间复杂度：O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func invertTree(root *TreeNode) *TreeNode { if root == nil { return nil } l:=invertTree(root.Left) r:=invertTree(root.Right) root.Left = r root.Right = l return root } </description>
+    </item>
+    
+    <item>
+      <title>235.Lowest Common Ancestor of a Binary Search Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode { for root!=nil { switch { case p.Val &amp;gt; root.Val &amp;amp;&amp;amp; q.Val &amp;gt; root.Val: root = root.Right case p.Val &amp;lt; root.Val &amp;amp;&amp;amp; q.Val &amp;lt; root.Val: root = root.Left default: return root } } return nil } </description>
+    </item>
+    
+    <item>
+      <title>235.Lowest Common Ancestor of a Binary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+/** * Definition for TreeNode. * type TreeNode struct { * Val int * Left *ListNode * Right *ListNode * } */ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode { if root == nil { return nil } if root.Val == p.Val || root.Val == q.Val { return root } left := lowestCommonAncestor(root.Left, p, q) right := lowestCommonAncestor(root.Right, p, q) if left != nil &amp;amp;&amp;amp; right !</description>
+    </item>
+    
+    <item>
+      <title>297.Serialize and Deserialize Binary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ type Codec struct { res []string } func Constructor() Codec { return Codec{} } // Serializes a tree to a single string. func (this *Codec) serialize(root *TreeNode) string { if root == nil { return &amp;quot;#&amp;quot; } return strconv.Itoa(root.Val) + &amp;quot;,&amp;quot; + this.</description>
+    </item>
+    
+    <item>
+      <title>559.Maximum Depth of N-ary Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度：最坏情况下, 树完全非平衡， 例如 每个节点有且仅有一个孩子节点，递归调用会发生 N 次（等于树的深度），所以存储调用栈需要 O(N)。 但是在最好情况下（树完全平衡），树的高度为 log(N)。 所以在此情况下空间复杂度为 O(log(N))  Go:
+/** * Definition for a Node. * type Node struct { * Val int * Children []*Node * } */ func maxDepth(root *Node) int { if root == nil { return 0 } res:=0 for _,v:=range root.Children { res = max(res,maxDepth(v)) } return res + 1 } func max(a,b int) int { if a&amp;gt;b { return a } return b } </description>
+    </item>
+    
+    <item>
+      <title>589.N-ary Tree Preorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:平均O(logn), 最坏O(n)  Go:
+/** * Definition for a Node. * type Node struct { * Val int * Children []*Node * } */ var res []int func preorder(root *Node) []int { res = []int{} dfs(root) return res } func dfs(root *Node){ if root != nil { res = append(res,root.Val) for _,v:=range root.Children { dfs(v) } } }  iteratively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+func preorder(root *Node) []int { var res []int var stack []*Node for len(stack)&amp;gt;0 || root !</description>
+    </item>
+    
+    <item>
+      <title>590.N-ary Tree Postorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a Node. * type Node struct { * Val int * Children []*Node * } */ var res []int func postorder(root *Node) []int { res = []int{} dfs(root) return res } func dfs(root *Node){ if root!=nil { for _,v:=range root.Children { dfs(v) } res = append(res,root.Val) } }  iteratively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+func postorder(root *Node) []int { res:=[]int{} var stack []*Node for len(stack)&amp;gt;0 || root !</description>
+    </item>
+    
+    <item>
+      <title>92.Reverse Linked List II (part)</title>
+      <link>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
+      <description>recursively 反转链表前 N 个节点  func reverseList(head *ListNode, n int) *ListNode { var successor *ListNode if n == 1 { successor = head.next return head } pre:=reverseList(head.Next,n-1) head.Next.Next = head head.Next = successor return pre } 时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。  Reverse a linked list from position m to n /** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func reverseBetween(head *ListNode, m int, n int) *ListNode { if m == 1 { return reverseN(head, n) } head.</description>
+    </item>
+    
+    <item>
+      <title>94.Binary Tree Inorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func inorderTraversal(root *TreeNode) []int { var res []int var stack []*TreeNode for len(stack)&amp;gt;0 || root != nil { // 为了第一次判断nil for root != nil { stack = append(stack, root) root = root.Left } res = append(res,stack[len(stack)-1].Val) root = stack[len(stack)-1].Right stack = stack[:len(stack)-1] } return res }  </description>
+    </item>
+    
+    <item>
+      <title>98.Validate Binary Search Tree</title>
+      <link>https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/</guid>
+      <description>递归 recursion  时间复杂度：O(n) 空间复杂度：O(n)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ func isValidBST(root *TreeNode) bool { return validate(root,math.MinInt64, math.MaxInt64) } func validate(root *TreeNode, l, r int) bool { if root == nil { return true } if root.Val &amp;lt;= l || root.Val &amp;gt;= r { return false } return validate(root.</description>
+    </item>
+    
+    <item>
+      <title>169.Majority Element</title>
+      <link>https://arboat.github.io/posts/leetcode-169.majority-element/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-169.majority-element/</guid>
+      <description>排序取中位数:
+ 时间复杂度：O((nlogn) 空间复杂度：O(logn)  Go:
+func majorityElement(nums []int) int { sort.Ints(nums) return nums[len(nums)/2] }  分治:
+ 时间复杂度：O((nlogn) 空间复杂度：O(logn)  func majorityElement(nums []int) int { return record(nums,0,len(nums)-1)
+}
+func countInSlice(nums []int, num, low, high int) int { count:=0 for i:=low;i&amp;lt;=high;i++{ if nums[i] == num { count++ } } return count } func record(nums []int, low, high int) int { if low == high { return nums[low] } mid:=(high-low)/2 + low left:=record(nums,low,mid) right:=record(nums,mid+1,high) if left == right { return left } leftCount:=countInSlice(nums,left,low,high) rightCount:=countInSlice(nums,right,low,high) if leftCount &amp;gt; rightCount { return left } return right }</description>
+    </item>
+    
+    <item>
+      <title>17.Letter Combinations of a Phone Number</title>
+      <link>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</guid>
+      <description>递归:
+ m 是输入中对应 3 个字母的数字个数，n 是输入中对应 4 个字母的数字个数 时间复杂度：O((3^m+4^n) 空间复杂度：O(m+n)  Go:
+var phoneMap = map[string]string { &amp;quot;2&amp;quot;: &amp;quot;abc&amp;quot;, &amp;quot;3&amp;quot;: &amp;quot;def&amp;quot;, &amp;quot;4&amp;quot;: &amp;quot;ghi&amp;quot;, &amp;quot;5&amp;quot;: &amp;quot;jkl&amp;quot;, &amp;quot;6&amp;quot;: &amp;quot;mno&amp;quot;, &amp;quot;7&amp;quot;: &amp;quot;pqrs&amp;quot;, &amp;quot;8&amp;quot;: &amp;quot;tuv&amp;quot;, &amp;quot;9&amp;quot;: &amp;quot;wxyz&amp;quot;, } func letterCombinations(digits string) []string { res :=[]string{} // 特殊情况 if len(digits) == 0 { return res } var backTrack func(path string, cur int) backTrack = func(path string, cur int) { if cur == len(digits) { res = append(res,path) return } // string index 的值要在string digit:=string(digits[cur]) letters:=phoneMap[digit] for _,v:=range letters{ path = path + string(v) backTrack(path,cur+1) path = path[:len(path)-1] } } backTrack(&amp;quot;&amp;quot;,0) return res }  </description>
+    </item>
+    
+    <item>
+      <title>46.Permutations</title>
+      <link>https://arboat.github.io/posts/leetcode-46.permutations/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-46.permutations/</guid>
+      <description>递归:
+ 时间复杂度：O((n*n!) 空间复杂度：O(n*n!)  Go:
+func permute(nums []int) [][]int { res := [][]int{} item := []int{} used := make([]bool,len(nums)) var backtrack func([]int,[]int,[]bool) backtrack = func(item, nums[]int, used[]bool){ if len(item) == len(nums) { tmp:= make([]int,len(item)) copy(tmp,item) res = append(res,tmp) } for i,v:=range nums { if !used[i]{ //yes used[i] = true item = append(item,v) //back backtrack(item,nums,used) //no item = item[:len(item)-1] used[i] = false } } } backtrack(item,nums,used) return res } </description>
+    </item>
+    
+    <item>
+      <title>47.Permutations II</title>
+      <link>https://arboat.github.io/posts/leetcode-47.permutations-ii/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-47.permutations-ii/</guid>
+      <description>递归:
+ 时间复杂度：O((n*n!) 空间复杂度：O(n*n!)  Go:
+func permuteUnique(nums []int) [][]int { res := [][]int{} item := []int{} used := make([]bool,len(nums)) sort.Ints(nums) var backtrack func([]int,[]int,[]bool) backtrack = func(item, nums[]int, used[]bool){ if len(item) == len(nums) { tmp:= make([]int,len(item)) copy(tmp,item) res = append(res,tmp) } for i,v:=range nums { if !used[i]{ //剪枝 !更彻底，顺序 if i&amp;gt;0 &amp;amp;&amp;amp; v == nums[i-1] &amp;amp;&amp;amp; !used[i-1] { //if i&amp;gt;0 &amp;amp;&amp;amp; v == nums[i-1] &amp;amp;&amp;amp; used[i-1] { continue } //yes used[i] = true item = append(item,v) //back backtrack(item,nums,used) //no item = item[:len(item)-1] used[i] = false } } } backtrack(item,nums,used) return res } </description>
+    </item>
+    
+    <item>
+      <title>50.Pow(x, n)</title>
+      <link>https://arboat.github.io/posts/leetcode-50.powx-n/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-50.powx-n/</guid>
+      <description>递归:
+ 时间复杂度O(logn) 空间复杂度O(logn)  Go:
+func myPow(x float64, n int) float64 { if n &amp;gt;= 0 { return dealer(x,n) } return 1.0/dealer(x,-n) } func dealer(x float64, n int) float64 { if n == 0 { return 1 } temp := dealer(x,n/2) if n%2 == 0 { return temp*temp } return temp * temp * x }  迭代
+ 时间复杂度O(logn) 空间复杂度O(1)  Go:
+func myPow(x float64, n int) float64 { if n &amp;gt;= 0 { return dealer(x,n) } return 1.</description>
+    </item>
+    
+    <item>
+      <title>51.N-Queens</title>
+      <link>https://arboat.github.io/posts/leetcode-51.n-queens/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-51.n-queens/</guid>
+      <description>递归:
+ 时间复杂度O(N!) 空间复杂度O(N)  Go:
+func solveNQueens(n int) [][]string { res:=[][]string{} queens:=make([]int,n) for i:=range queens { queens[i] = -1 } c,d1,d2:=map[int]bool{},map[int]bool{},map[int]bool{} var backTrack func(queens[]int,row int,c,d1,d2 map[int]bool) backTrack = func(queens[]int,row int,c,d1,d2 map[int]bool){ if row == n{ solution:=generate(queens,n) res = append(res,solution) return } for i:=0;i&amp;lt;n;i++{ if c[i] || d1[row-i] || d2[row+i] { continue } queens[row]=i c[i], d1[row-i], d2[row+i] = true, true, true backTrack(queens,row+1,c,d1,d2) queens[row]=-1 delete(c,i) delete(d1,row-i) delete(d2,row+i) } } backTrack(queens,0,c,d1,d2) return res } func generate(queens[]int, n int) []string { solution:=[]string{} for i:=0;i&amp;lt;n;i++{ row:=make([]byte,n) for j:=0;j&amp;lt;n;j++{ row[j]=&#39;.</description>
+    </item>
+    
+    <item>
+      <title>77.Combinations</title>
+      <link>https://arboat.github.io/posts/leetcode-77.combinations/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-77.combinations/</guid>
+      <description>递归:
+ 时间复杂度：O(( k n)×k) 空间复杂度：O(n)  Go:
+func combine(n int, k int) [][]int { res:= [][]int{} item:= []int{} var dfs func(int) dfs = func(cur int) { if len(item) + (n-cur+1) &amp;lt; k { return } //copy不会影响原slice if len(item) == k { temp:=make([]int,k) copy(temp,item) res = append(res, temp) return } // yes 回溯 item = append(item, cur) dfs(cur+1) item = item[:len(item)-1] // no dfs(cur+1) } dfs(1) return res }  回溯法 注意剪枝</description>
+    </item>
+    
+    <item>
+      <title>78.Subsets</title>
+      <link>https://arboat.github.io/posts/leetcode-78.subsets/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-78.subsets/</guid>
+      <description>递归:
+ 时间复杂度：O((N*2^N) 空间复杂度：O(N*2^N)  Go:
+func combine(n int, k int) [][]int { res:= [][]int{} item:= []int{} var dfs func(int) dfs = func(cur int) { if len(item) + (n-cur+1) &amp;lt; k { return } //copy不会影响原slice if len(item) == k { temp:=make([]int,k) copy(temp,item) res = append(res, temp) return } // yes 回溯 item = append(item, cur) dfs(cur+1) item = item[:len(item)-1] // no dfs(cur+1) } dfs(1) return res }  回溯法 注意剪枝</description>
+    </item>
+    
+  </channel>
+</rss>

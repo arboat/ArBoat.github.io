@@ -17,7 +17,38 @@
       <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
       
       <guid>https://arboat.github.io/posts/leetcode-206.reverse-linked-list/</guid>
-      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively func reverseList(head *ListNode) *ListNode { var pre *ListNode for head != nil { head, pre, head.Next = head.Next, head, pre } // for head != nil { // temp:=head.Next // head.Next = pre // pre = head // head = temp //} return pre } 时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  recursively func reverseList(head *ListNode) *ListNode { if head == nil || head.</description>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively  时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  Go:
+func reverseList(head *ListNode) *ListNode { var pre *ListNode for head != nil { head, pre, head.Next = head.Next, head, pre } // for head != nil { // temp:=head.Next // head.Next = pre // pre = head // head = temp //} return pre }  Pyhton:</description>
+    </item>
+    
+    <item>
+      <title>24.Swap Nodes in Pairs</title>
+      <link>https://arboat.github.io/posts/leetcode-24.swap-nodes-in-pairs/</link>
+      <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-24.swap-nodes-in-pairs/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  iteratively  时间复杂度：O(n)，假设 n 是列表的长度，时间复杂度是 O(n)。 空间复杂度：O(1)。  Go:
+func swapPairs(head *ListNode) *ListNode { guard:=&amp;amp;ListNode{Next:head} temp:=guard for temp.Next != nil &amp;amp;&amp;amp; temp.Next.Next != nil { first := temp.Next second := temp.Next.Next temp.Next = second first.Next = second.Next second.Next = first temp = first // 已经交换为第二个 } return guard.Next }  Pyhton:</description>
+    </item>
+    
+    <item>
+      <title>25.Reverse Nodes in k-Group</title>
+      <link>https://arboat.github.io/posts/leetcode-25.reverse-nodes-in-k-group/</link>
+      <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-25.reverse-nodes-in-k-group/</guid>
+      <description>/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */  recursively  时间复杂度为 O(n*K)最好的情况为 O(n) 最差的情况未 O(n^2) 空间复杂度：O(1)，除了几个必须的节点指针外，并没有占用其他空间  Go:
+ func reverseKGroup(head *ListNode, k int) *ListNode { dummy:= &amp;amp;ListNode{Next:head} //point 1 pre:=dummy //point 2 for head != nil { tail:=pre //point 3 for i:=0;i&amp;lt;k;i++{ tail = tail.Next if tail == nil { return dummy.Next } } temp:=tail.Next head, tail = reverse(head,tail) pre.</description>
+    </item>
+    
+    <item>
+      <title>21. Merge Two Sorted Lists</title>
+      <link>https://arboat.github.io/posts/leetcode-21.merge-two-sorted-lists/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-21.merge-two-sorted-lists/</guid>
+      <description>递归 recursion  时间复杂度：O(n+m) 空间复杂度：O(n+m)  Go:
+/** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode { if l1 == nil { return l2 } else if l2 == nil { return l1 } else if l1.Val &amp;lt; l2.Val { l1.Next = mergeTwoLists(l1.Next,l2) return l1 } else { l2.Next = mergeTwoLists(l1,l2.Next) return l2 } }  Python:</description>
     </item>
     
     <item>
@@ -27,6 +58,29 @@
       
       <guid>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
       <description>recursively 反转链表前 N 个节点  func reverseList(head *ListNode, n int) *ListNode { var successor *ListNode if n == 1 { successor = head.next return head } pre:=reverseList(head.Next,n-1) head.Next.Next = head head.Next = successor return pre } 时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。  Reverse a linked list from position m to n /** * Definition for singly-linked list. * type ListNode struct { * Val int * Next *ListNode * } */ func reverseBetween(head *ListNode, m int, n int) *ListNode { if m == 1 { return reverseN(head, n) } head.</description>
+    </item>
+    
+    <item>
+      <title>141.Linked List Cycle</title>
+      <link>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</link>
+      <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</guid>
+      <description>快慢指针  时间复杂度： O(n) 空间复杂度：O(1)  Go:
+func hasCycle(head *ListNode) bool { if head == nil || head.Next == nil { return false } slow:=head fast:=head.Next for slow != fast { if fast ==nil || fast.Next == nil { return false } slow=slow.Next fast=fast.Next.Next } return true }  Python:
+class Solution: def hasCycle(self, head: ListNode) -&amp;gt; bool: if head == None or head.next == None: return False slow, fast = head,head.</description>
+    </item>
+    
+    <item>
+      <title>84.Largest Rectangle in Histogram</title>
+      <link>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</link>
+      <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</guid>
+      <description>快慢指针 2(F+a)=F+a+b+a -&amp;gt; F=b
+ 时间复杂度： O(n) 空间复杂度：O(1)  Go:
+func detectCycle(head *ListNode) *ListNode { slow,fast:=head,head for { if fast==nil || fast.Next ==nil { return nil } slow = slow.Next fast = fast.Next.Next if slow == fast { break } } for head != slow { head = head.Next slow = slow.Next } return head }  Python:
+class Solution: def detectCycle(self, head: ListNode) -&amp;gt; ListNode: slow, fast = head, head while True: if fast == None or fast.</description>
     </item>
     
   </channel>

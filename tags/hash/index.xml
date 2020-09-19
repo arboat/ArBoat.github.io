@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hash on ArBlog</title>
+    <link>https://arboat.github.io/tags/hash/</link>
+    <description>Recent content in hash on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2020 00:05:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://arboat.github.io/tags/hash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>141.Linked List Cycle</title>
+      <link>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</link>
+      <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</guid>
+      <description>快慢指针  时间复杂度： O(n) 空间复杂度：O(1)  Go:
+func hasCycle(head *ListNode) bool { if head == nil || head.Next == nil { return false } slow:=head fast:=head.Next for slow != fast { if fast ==nil || fast.Next == nil { return false } slow=slow.Next fast=fast.Next.Next } return true }  Python:
+class Solution: def hasCycle(self, head: ListNode) -&amp;gt; bool: if head == None or head.next == None: return False slow, fast = head,head.</description>
+    </item>
+    
+    <item>
+      <title>84.Largest Rectangle in Histogram</title>
+      <link>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</link>
+      <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</guid>
+      <description>快慢指针 2(F+a)=F+a+b+a -&amp;gt; F=b
+ 时间复杂度： O(n) 空间复杂度：O(1)  Go:
+func detectCycle(head *ListNode) *ListNode { slow,fast:=head,head for { if fast==nil || fast.Next ==nil { return nil } slow = slow.Next fast = fast.Next.Next if slow == fast { break } } for head != slow { head = head.Next slow = slow.Next } return head }  Python:
+class Solution: def detectCycle(self, head: ListNode) -&amp;gt; ListNode: slow, fast = head, head while True: if fast == None or fast.</description>
+    </item>
+    
+    <item>
+      <title>1.Two Sum</title>
+      <link>https://arboat.github.io/posts/leetcode-1.two-sum.md/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-1.two-sum.md/</guid>
+      <description>暴力法  时间复杂度：O(n^2) 空间复杂度：O(1)  Go:
+func twoSum(nums []int, target int) []int { for i:=0;i&amp;lt;len(nums)-1;i++{ for j:=i+1;j&amp;lt;len(nums);j++{ if nums[j]+nums[i]==target { return []int{i,j} } } } }  哈希表  时间复杂度：O(n) 空间复杂度：O(n)  Go：
+func twoSum(nums []int, target int) []int { m:=make(map[int]int) // nums 的v作为map的k，k作为map的v for k1,v1 := range nums { v2:=target - v1 if _,ok := m[v2]; ok { return []int{m[v2],k1} //已存在的是已经先存入map的，所以在前 } m[v1] = k1 } return nil }  Python:</description>
+    </item>
+    
+    <item>
+      <title>242.Valid Anagram</title>
+      <link>https://arboat.github.io/posts/leetcode-242.valid-anagram/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-242.valid-anagram/</guid>
+      <description>question: 1.大小写 2.完全相同
+先分别排序，再比较  时间复杂度 O(nlogn) 空间复杂度 O(1)  Go:
+func isAnagram(s string, t string) bool { sByte:=[]byte(s) tByte:=[]byte(t) if len(sByte) != len(tByte){ return false } sort.Slice(sByte,func(i,j int) bool { return sByte[i]&amp;lt;sByte[j] }) sort.Slice(tByte,func(i,j int) bool { return tByte[i]&amp;lt;tByte[j] }) for i,v:=range sByte{ if v!=tByte[i] { return false } } return true }  Python:
+class Solution: def isAnagram(self, s: str, t: str) -&amp;gt; bool: return sorted(s) == sorted(t)  哈希表  时间复杂度 O(n) 空间复杂度 O(1)  Go:</description>
+    </item>
+    
+    <item>
+      <title>49.Group Anagrams</title>
+      <link>https://arboat.github.io/posts/leetcode-49.group-anagrams/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-49.group-anagrams/</guid>
+      <description>question: 1.大小写 2.完全相同
+先计算每个字符串中数字次数的数组，再存入map，返回map value的数组  时间复杂度 O(nk),其中 NN 是 strs 的长度，而 KK 是 strs 中字符串的最大长度。计算每个字符串的字符串大小是线性的，我们统计每个字符串 空间复杂度 O(nk),排序存储在 res 中的全部信息内容  Go:
+func groupAnagrams(strs []string) [][]string { m:=make(map[[26]int][]string) for _,v:=range strs{ k:=strKey(v) s,ok:=m[k] if ok { s=append(s,v) // s为copy 需要重新赋值 m[k]=s } else { m[k]=[]string{v} } } res:=make([][]string,0) for _,v:=range m{ res = append(res,v) } return res } func strKey(s string)[26]int{ res:=[26]int{} for _,v:=range s{ res[v-&#39;a&#39;]++ //单引号 表示rune 只能一个字符int32 } return res } </description>
+    </item>
+    
+  </channel>
+</rss>

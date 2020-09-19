@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iteration on ArBlog</title>
+    <link>https://arboat.github.io/tags/iteration/</link>
+    <description>Recent content in iteration on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2020 00:00:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://arboat.github.io/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>102.Binary Tree Level Order Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-102.binary-tree-level-order-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-102.binary-tree-level-order-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func postorderTraversal(root *TreeNode) []int { res=make([]int,0) postoder(root) return res } func postoder(root *TreeNode) { if root != nil { postoder(root.Left) postoder(root.Right) res=append(res,root.Val) } } // 两次append func postorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append(postorderTraversal(root.</description>
+    </item>
+    
+    <item>
+      <title>144.Binary Tree Preorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-144.binary-tree-preorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-144.binary-tree-preorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func preorderTraversal(root *TreeNode) []int { res = make([]int,0) preorder(root) return res } func preorder(root *TreeNode){ if root != nil { res = append(res,root.Val) preorder(root.Left) preorder(root.Right) } } // 两次append func preorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append([]int{root.</description>
+    </item>
+    
+    <item>
+      <title>145.Binary Tree Postorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-145.binary-tree-postorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-145.binary-tree-postorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a binary tree node. * type TreeNode struct { * Val int * Left *TreeNode * Right *TreeNode * } */ 少赋值内存占用少 var res = make([]int, 0) // leetcode 多个测试用例的时候要重置为零值 func postorderTraversal(root *TreeNode) []int { res=make([]int,0) postoder(root) return res } func postoder(root *TreeNode) { if root != nil { postoder(root.Left) postoder(root.Right) res=append(res,root.Val) } } // 两次append func postorderTraversal(root *TreeNode) []int { if root == nil { return []int{} } res := append(postorderTraversal(root.</description>
+    </item>
+    
+    <item>
+      <title>589.N-ary Tree Preorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:平均O(logn), 最坏O(n)  Go:
+/** * Definition for a Node. * type Node struct { * Val int * Children []*Node * } */ var res []int func preorder(root *Node) []int { res = []int{} dfs(root) return res } func dfs(root *Node){ if root != nil { res = append(res,root.Val) for _,v:=range root.Children { dfs(v) } } }  iteratively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+func preorder(root *Node) []int { var res []int var stack []*Node for len(stack)&amp;gt;0 || root !</description>
+    </item>
+    
+    <item>
+      <title>590.N-ary Tree Postorder Traversal</title>
+      <link>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+      
+      <guid>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</guid>
+      <description>recursively  时间复杂度:O(n) 空间复杂度:O(logn)  Go:
+/** * Definition for a Node. * type Node struct { * Val int * Children []*Node * } */ var res []int func postorder(root *Node) []int { res = []int{} dfs(root) return res } func dfs(root *Node){ if root!=nil { for _,v:=range root.Children { dfs(v) } res = append(res,root.Val) } }  iteratively  时间复杂度:O(n) 空间复杂度:O(n)  Go:
+func postorder(root *Node) []int { res:=[]int{} var stack []*Node for len(stack)&amp;gt;0 || root !</description>
+    </item>
+    
+  </channel>
+</rss>

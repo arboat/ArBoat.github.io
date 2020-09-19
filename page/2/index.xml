@@ -1,0 +1,540 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArBlog</title>
+    <link>https://arboat.github.io/</link>
+    <description>Recent content on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://arboat.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>22.Generate Parentheses</title>
+        <link>https://arboat.github.io/posts/leetcode-22.generate-parentheses/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-22.generate-parentheses/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-22.generate-parentheses/ -&lt;h1 id=&#34;递归-recursion&#34;&gt;递归 recursion&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度：O(2^n)&lt;/li&gt;
+&lt;li&gt;空间复杂度：O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var res []string
+func generateParenthesis(n int) []string {
+    res = make([]string,0)
+    genetate(0,0,n,&amp;quot;&amp;quot;)
+    return res
+}
+func genetate(left,right, max int, s string){
+    if left == max &amp;amp;&amp;amp; right == max {
+        res = append(res,s)
+        return
+    }
+    if left &amp;lt; max {
+        genetate(left+1, right, max, s+&amp;quot;(&amp;quot;)
+    }
+    if right &amp;lt; left {
+        genetate(left, right+1, max, s+&amp;quot;)&amp;quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-22.generate-parentheses/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>226.Invert Binary Tree</title>
+        <link>https://arboat.github.io/posts/leetcode-226.invert-binary-tree/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-226.invert-binary-tree/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-226.invert-binary-tree/ -&lt;h1 id=&#34;递归-recursion&#34;&gt;递归 recursion&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度：O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度：O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a binary tree node.
+* type TreeNode struct {
+*     Val int
+*     Left *TreeNode
+*     Right *TreeNode
+* }
+*/
+func invertTree(root *TreeNode) *TreeNode {
+    if root == nil {
+        return nil
+    }
+    l:=invertTree(root.Left)
+    r:=invertTree(root.Right)
+    root.Left = r
+    root.Right = l
+    return root
+}&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-226.invert-binary-tree/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>235.Lowest Common Ancestor of a Binary Search Tree</title>
+        <link>https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a binary tree node.
+* type TreeNode struct {
+*     Val   int
+*     Left  *TreeNode
+*     Right *TreeNode
+* }
+*/
+
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    for root!=nil {
+        switch {
+            case p.Val &amp;gt; root.Val &amp;amp;&amp;amp; q.Val &amp;gt; root.Val:
+                root = root.Right
+            case p.Val &amp;lt; root.Val &amp;amp;&amp;amp; q.Val &amp;lt; root.Val:
+                root = root.Left
+            default:
+                return root
+        }
+    }
+    return nil
+}&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-235.lowest-common-ancestor-of-a-binary-search-tree/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>235.Lowest Common Ancestor of a Binary Tree</title>
+        <link>https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for TreeNode.
+* type TreeNode struct {
+*     Val int
+*     Left *ListNode
+*     Right *ListNode
+* }
+*/
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root == nil {
+        return nil
+    }
+    if root.Val == p.Val || root.Val == q.Val {
+        return root
+    }
+    left := lowestCommonAncestor(root.Left, p, q)
+    right := lowestCommonAncestor(root.Right, p, q)
+    if left != nil &amp;amp;&amp;amp; right != nil {
+        return root
+    }
+    if left == nil {
+        return right
+    }
+    return left
+}&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-236.lowest-common-ancestor-of-a-binary-tree-copy/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>297.Serialize and Deserialize Binary Tree</title>
+        <link>https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a binary tree node.
+* type TreeNode struct {
+*     Val int
+*     Left *TreeNode
+*     Right *TreeNode
+* }
+*/
+
+type Codec struct {
+    res []string
+}
+
+func Constructor() Codec {
+    return Codec{}
+}
+
+// Serializes a tree to a single string.
+func (this *Codec) serialize(root *TreeNode) string {
+    if root == nil {
+        return &amp;quot;#&amp;quot;
+    }
+    return strconv.Itoa(root.Val) + &amp;quot;,&amp;quot; + this.serialize(root.Left) +
+    &amp;quot;,&amp;quot; + this.serialize(root.Right)
+}
+
+// Deserializes your encoded data to tree.
+func (this *Codec) deserialize(data string) *TreeNode {    
+    this.res = strings.Split(data,&amp;quot;,&amp;quot;)
+    return this.dfs()
+}
+
+func (this *Codec)dfs() *TreeNode {
+    node:= this.res[0]
+    this.res = this.res[1:]
+    if node == &amp;quot;#&amp;quot; {
+        return nil
+    }
+    v,_ := strconv.Atoi(node)
+    root := &amp;amp;TreeNode{
+        Val: v,
+        Left: this.dfs(),
+        Right: this.dfs(),
+    }
+    return root
+}
+
+
+/**
+* Your Codec object will be instantiated and called as such:
+* obj := Constructor();
+* data := obj.serialize(root);
+* ans := obj.deserialize(data);
+*/&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-297.serialize-and-deserialize-binary-tree/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>559.Maximum Depth of N-ary Tree</title>
+        <link>https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度：最坏情况下, 树完全非平衡，
+例如 每个节点有且仅有一个孩子节点，递归调用会发生 N 次（等于树的深度），所以存储调用栈需要 O(N)。
+但是在最好情况下（树完全平衡），树的高度为 log(N)。
+所以在此情况下空间复杂度为 O(log(N))&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a Node.
+* type Node struct {
+*     Val int
+*     Children []*Node
+* }
+*/
+
+func maxDepth(root *Node) int {
+    if root == nil {
+        return 0
+    } 
+    res:=0
+    for _,v:=range root.Children {
+        res = max(res,maxDepth(v))
+    }
+    return res + 1
+}
+func max(a,b int) int {
+    if a&amp;gt;b {
+        return a
+    }
+    return b
+}&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-559.maximum-depth-of-n-ary-tree/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>589.N-ary Tree Preorder Traversal</title>
+        <link>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:平均O(logn), 最坏O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a Node.
+* type Node struct {
+*     Val int
+*     Children []*Node
+* }
+*/
+var res []int
+func preorder(root *Node) []int {
+    res = []int{}
+    dfs(root)
+    return res
+}
+func dfs(root *Node){
+    if root != nil {
+        res = append(res,root.Val)
+        for _,v:=range root.Children {
+            dfs(v)
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;iteratively&#34;&gt;iteratively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;func preorder(root *Node) []int {
+var res []int
+var stack []*Node
+for len(stack)&amp;gt;0 || root != nil {
+    for root != nil {
+        res = append(res,root.Val)
+        if len(root.Children) == 0 {
+            stack = append(stack,nil)
+            root = nil
+            break
+        }
+        for i:=len(root.Children)-1;i&amp;gt;0;i--{
+            stack = append(stack,root.Children[i])
+        }
+        root = root.Children[0]
+    }
+    root = stack[len(stack)-1]
+    stack = stack[:len(stack)-1]
+}
+return res
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+- https://arboat.github.io/posts/leetcode-589.n-ary-tree-preorder-traversal/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>590.N-ary Tree Postorder Traversal</title>
+        <link>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(logn)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a Node.
+* type Node struct {
+*     Val int
+*     Children []*Node
+* }
+*/
+var res []int
+func postorder(root *Node) []int {
+    res = []int{}
+    dfs(root)
+    return res
+}
+func dfs(root *Node){
+    if root!=nil {
+        for _,v:=range root.Children {
+            dfs(v)
+        }
+        res = append(res,root.Val)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;iteratively&#34;&gt;iteratively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;func postorder(root *Node) []int {
+    res:=[]int{}
+    var stack []*Node
+    for len(stack)&amp;gt;0 || root != nil{
+        for root !=nil{
+            res = append([]int{root.Val}, res...)
+            if len(root.Children) == 0 {
+                stack = append(stack,nil)
+                root = nil
+                break
+            }
+            for i:=0;i&amp;lt;len(root.Children)-1;i++ {
+                stack = append(stack,root.Children[i])
+            }
+            root = root.Children[len(root.Children)-1]
+        }
+        root = stack[len(stack)-1]
+        stack = stack[:len(stack)-1]
+    }
+    return res
+}
+&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-590.n-ary-tree-postorder-traversal/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>92.Reverse Linked List II (part)</title>
+        <link>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;h2 id=&#34;反转链表前-n-个节点&#34;&gt;反转链表前 N 个节点&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; func reverseList(head *ListNode, n int) *ListNode {
+    var successor *ListNode
+    if n == 1 {
+        successor = head.next
+        return head
+    }
+    pre:=reverseList(head.Next,n-1)
+    head.Next.Next = head
+    head.Next = successor
+    return pre
+    }
+    时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。
+    空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;reverse-a-linked-list-from-position-m-to-n&#34;&gt;Reverse a linked list from position m to n&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseBetween(head *ListNode, m int, n int) *ListNode {
+    if m == 1 {
+        return reverseN(head, n)
+    }
+    head.Next = reverseBetween(head.Next, m-1 ,n-1)
+    return head
+}
+
+var follower *ListNode
+
+func reverseN(head *ListNode ,n int) *ListNode {
+    if n == 1 {
+        follower = head.Next
+        return head
+    }
+    prev := reverseN(head.Next, n-1)
+    head.Next.Next = head
+    head.Next = follower
+    return prev
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;头插法&#34;&gt;头插法&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseBetween(head *ListNode, m int, n int) *ListNode {
+    dummy := &amp;amp;ListNode{Next:head}
+    g:= dummy
+    p:=dummy.Next
+    
+    step:=0
+    for step + 1 &amp;lt; m {
+        g=g.Next
+        p=p.Next
+        step++
+    }
+    for i:=0 ; i&amp;lt; n-m ;i++ {
+        temp := p.Next
+        p.Next = p.Next.Next
+        temp.Next = g.Next    // 注意p第二次之后不是g.Next，只有第一次是
+        g.Next = temp         // linked List 画图
+    }
+    return dummy.Next
+}&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-92.reverse-linked-list-ii-part/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>94.Binary Tree Inorder Traversal</title>
+        <link>https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/</link>
+        <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
+        
+        <guid>https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/</guid>
+        <description>ArBlog https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/ -&lt;h1 id=&#34;recursively&#34;&gt;recursively&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
+&lt;li&gt;空间复杂度:O(logn)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+* Definition for a binary tree node.
+* type TreeNode struct {
+*     Val int
+*     Left *TreeNode
+*     Right *TreeNode
+* }
+*/
+func inorderTraversal(root *TreeNode) []int {
+    var res []int
+    var stack []*TreeNode
+    for len(stack)&amp;gt;0 || root != nil {  // 为了第一次判断nil
+        for root != nil {
+            stack = append(stack, root)
+            root = root.Left
+        }
+        res = append(res,stack[len(stack)-1].Val)
+        root = stack[len(stack)-1].Right
+        stack = stack[:len(stack)-1]
+    }
+    return res
+}
+&lt;/code&gt;&lt;/pre&gt;
+- https://arboat.github.io/posts/leetcode-94.binary-tree-inorder-traversal/ - </description>
+        </item>
+    
+    
+  </channel>
+</rss> 
