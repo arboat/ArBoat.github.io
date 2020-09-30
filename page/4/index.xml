@@ -1,23 +1,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArBlog</title>
-    <link>https://arboat.github.io/</link>
+    <link>https://blog.arboat.top/</link>
     <description>Recent content on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
     
-        <atom:link href="https://arboat.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.arboat.top/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>66.Plus One</title>
-        <link>https://arboat.github.io/posts/leetcode-66.plus-one/</link>
+        <link>https://blog.arboat.top/posts/leetcode-66.plus-one/</link>
         <pubDate>Fri, 01 May 2020 00:00:06 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-66.plus-one/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-66.plus-one/ -&lt;ul&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-66.plus-one/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-66.plus-one/ -&lt;ul&gt;
 &lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度:O(1)&lt;/li&gt;
 &lt;/ul&gt;
@@ -56,18 +56,18 @@ func plusOne(digits []int) []int {
         digits.insert(0, 1)
         return digits
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-66.plus-one/ - </description>
+- https://blog.arboat.top/posts/leetcode-66.plus-one/ - </description>
         </item>
     
     
     
         <item>
         <title>169.Majority Element</title>
-        <link>https://arboat.github.io/posts/leetcode-169.majority-element/</link>
+        <link>https://blog.arboat.top/posts/leetcode-169.majority-element/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-169.majority-element/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-169.majority-element/ -&lt;p&gt;排序取中位数:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-169.majority-element/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-169.majority-element/ -&lt;p&gt;排序取中位数:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O((nlogn)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(logn)&lt;/li&gt;
@@ -112,18 +112,18 @@ return left
 }
 return right
 }&lt;/p&gt;
-- https://arboat.github.io/posts/leetcode-169.majority-element/ - </description>
+- https://blog.arboat.top/posts/leetcode-169.majority-element/ - </description>
         </item>
     
     
     
         <item>
         <title>17.Letter Combinations of a Phone Number</title>
-        <link>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</link>
+        <link>https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;m 是输入中对应 3 个字母的数字个数，n 是输入中对应 4 个字母的数字个数&lt;/li&gt;
 &lt;li&gt;时间复杂度：O((3^m+4^n)&lt;/li&gt;
@@ -166,18 +166,18 @@ func letterCombinations(digits string) []string {
     return res
 }
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/ - </description>
+- https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/ - </description>
         </item>
     
     
     
         <item>
         <title>46.Permutations</title>
-        <link>https://arboat.github.io/posts/leetcode-46.permutations/</link>
+        <link>https://blog.arboat.top/posts/leetcode-46.permutations/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-46.permutations/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-46.permutations/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-46.permutations/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-46.permutations/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O((n*n!)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(n*n!)&lt;/li&gt;
@@ -210,18 +210,18 @@ func letterCombinations(digits string) []string {
     backtrack(item,nums,used)
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-46.permutations/ - </description>
+- https://blog.arboat.top/posts/leetcode-46.permutations/ - </description>
         </item>
     
     
     
         <item>
         <title>47.Permutations II</title>
-        <link>https://arboat.github.io/posts/leetcode-47.permutations-ii/</link>
+        <link>https://blog.arboat.top/posts/leetcode-47.permutations-ii/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-47.permutations-ii/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-47.permutations-ii/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-47.permutations-ii/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-47.permutations-ii/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O((n*n!)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(n*n!)&lt;/li&gt;
@@ -260,18 +260,18 @@ res := [][]int{}
     backtrack(item,nums,used)
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-47.permutations-ii/ - </description>
+- https://blog.arboat.top/posts/leetcode-47.permutations-ii/ - </description>
         </item>
     
     
     
         <item>
         <title>50.Pow(x, n)</title>
-        <link>https://arboat.github.io/posts/leetcode-50.powx-n/</link>
+        <link>https://blog.arboat.top/posts/leetcode-50.powx-n/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-50.powx-n/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-50.powx-n/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-50.powx-n/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-50.powx-n/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度O(logn)&lt;/li&gt;
 &lt;li&gt;空间复杂度O(logn)&lt;/li&gt;
@@ -320,18 +320,18 @@ func dealer(x float64, n int) float64 {
     }
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-50.powx-n/ - </description>
+- https://blog.arboat.top/posts/leetcode-50.powx-n/ - </description>
         </item>
     
     
     
         <item>
         <title>51.N-Queens</title>
-        <link>https://arboat.github.io/posts/leetcode-51.n-queens/</link>
+        <link>https://blog.arboat.top/posts/leetcode-51.n-queens/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-51.n-queens/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-51.n-queens/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-51.n-queens/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-51.n-queens/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度O(N!)&lt;/li&gt;
 &lt;li&gt;空间复杂度O(N)&lt;/li&gt;
@@ -379,18 +379,18 @@ func generate(queens[]int, n int) []string {
     }
     return solution
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-51.n-queens/ - </description>
+- https://blog.arboat.top/posts/leetcode-51.n-queens/ - </description>
         </item>
     
     
     
         <item>
         <title>70.Climbing Stairs</title>
-        <link>https://arboat.github.io/posts/leetcode-70.climbing-stairs/</link>
+        <link>https://blog.arboat.top/posts/leetcode-70.climbing-stairs/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-70.climbing-stairs/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-70.climbing-stairs/ -&lt;p&gt;分析可得本题为Fibonacci sequence&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-70.climbing-stairs/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-70.climbing-stairs/ -&lt;p&gt;分析可得本题为Fibonacci sequence&lt;/p&gt;
 &lt;p&gt;用通项公式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(log n)&lt;/li&gt;
@@ -423,18 +423,18 @@ func generate(queens[]int, n int) []string {
             r=p+q
             i+=1
         return r&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-70.climbing-stairs/ - </description>
+- https://blog.arboat.top/posts/leetcode-70.climbing-stairs/ - </description>
         </item>
     
     
     
         <item>
         <title>77.Combinations</title>
-        <link>https://arboat.github.io/posts/leetcode-77.combinations/</link>
+        <link>https://blog.arboat.top/posts/leetcode-77.combinations/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-77.combinations/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-77.combinations/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-77.combinations/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-77.combinations/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(( k
 n)×k)&lt;/li&gt;
@@ -509,18 +509,18 @@ func combine(n int, k int) [][]int {
     return res
 }
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-77.combinations/ - </description>
+- https://blog.arboat.top/posts/leetcode-77.combinations/ - </description>
         </item>
     
     
     
         <item>
         <title>78.Subsets</title>
-        <link>https://arboat.github.io/posts/leetcode-78.subsets/</link>
+        <link>https://blog.arboat.top/posts/leetcode-78.subsets/</link>
         <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-78.subsets/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-78.subsets/ -&lt;p&gt;递归:&lt;/p&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-78.subsets/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-78.subsets/ -&lt;p&gt;递归:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O((N*2^N)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(N*2^N)&lt;/li&gt;
@@ -594,7 +594,7 @@ func combine(n int, k int) [][]int {
     return res
 }
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-78.subsets/ - </description>
+- https://blog.arboat.top/posts/leetcode-78.subsets/ - </description>
         </item>
     
     

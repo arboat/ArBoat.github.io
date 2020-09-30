@@ -1,23 +1,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArBlog</title>
-    <link>https://arboat.github.io/</link>
+    <link>https://blog.arboat.top/</link>
     <description>Recent content on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
     
-        <atom:link href="https://arboat.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.arboat.top/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>98.Validate Binary Search Tree</title>
-        <link>https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/</link>
+        <link>https://blog.arboat.top/posts/leetcode-98.validate-binary-search-tree/</link>
         <pubDate>Tue, 21 Jul 2020 00:00:04 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/ -&lt;h1 id=&#34;递归-recursion&#34;&gt;递归 recursion&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-98.validate-binary-search-tree/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-98.validate-binary-search-tree/ -&lt;h1 id=&#34;递归-recursion&#34;&gt;递归 recursion&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(n)&lt;/li&gt;
@@ -86,18 +86,18 @@ func isValidBST(root *TreeNode) bool {
     return true
 }
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-98.validate-binary-search-tree/ - </description>
+- https://blog.arboat.top/posts/leetcode-98.validate-binary-search-tree/ - </description>
         </item>
     
     
     
         <item>
         <title>20.Valid Parentheses</title>
-        <link>https://arboat.github.io/posts/leetcode-20.valid-parentheses/</link>
+        <link>https://blog.arboat.top/posts/leetcode-20.valid-parentheses/</link>
         <pubDate>Mon, 01 Jun 2020 00:00:06 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-20.valid-parentheses/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-20.valid-parentheses/ -&lt;ul&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-20.valid-parentheses/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-20.valid-parentheses/ -&lt;ul&gt;
 &lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度:O(n)&lt;/li&gt;
 &lt;/ul&gt;
@@ -142,18 +142,18 @@ func isValidBST(root *TreeNode) bool {
             else: 
                 stack=stack[:len(stack)-1]
         return len(stack)==0&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-20.valid-parentheses/ - </description>
+- https://blog.arboat.top/posts/leetcode-20.valid-parentheses/ - </description>
         </item>
     
     
     
         <item>
         <title>141.Linked List Cycle</title>
-        <link>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</link>
+        <link>https://blog.arboat.top/posts/leetcode-141.linked-list-cycle/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-141.linked-list-cycle/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-141.linked-list-cycle/ -&lt;h1 id=&#34;快慢指针&#34;&gt;快慢指针&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-141.linked-list-cycle/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-141.linked-list-cycle/ -&lt;h1 id=&#34;快慢指针&#34;&gt;快慢指针&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度： O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(1)&lt;/li&gt;
@@ -214,18 +214,18 @@ func isValidBST(root *TreeNode) bool {
             head =head.next
         return False
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-141.linked-list-cycle/ - </description>
+- https://blog.arboat.top/posts/leetcode-141.linked-list-cycle/ - </description>
         </item>
     
     
     
         <item>
         <title>155.Min Stack</title>
-        <link>https://arboat.github.io/posts/leetcode-155.min-stack/</link>
+        <link>https://blog.arboat.top/posts/leetcode-155.min-stack/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-155.min-stack/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-155.min-stack/ -&lt;ul&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-155.min-stack/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-155.min-stack/ -&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;问清空栈操作&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;辅助栈-注意相等时也压入辅助栈&#34;&gt;辅助栈 注意相等时也压入辅助栈&lt;/h1&gt;
@@ -381,18 +381,18 @@ func (this *MinStack) GetMin() int {
 * param_3 := obj.Top();
 * param_4 := obj.GetMin();
 */&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-155.min-stack/ - </description>
+- https://blog.arboat.top/posts/leetcode-155.min-stack/ - </description>
         </item>
     
     
     
         <item>
         <title>239.Sliding Window Maximum</title>
-        <link>https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/</link>
+        <link>https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;p&gt;有 n-k+1个滑动窗口&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 O(nk)&lt;/li&gt;
@@ -427,18 +427,18 @@ func (this *MinStack) GetMin() int {
     }
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/ - </description>
+- https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/ - </description>
         </item>
     
     
     
         <item>
         <title>42.Trapping Rain Water</title>
-        <link>https://arboat.github.io/posts/leetcode-42.trapping-rain-water/</link>
+        <link>https://blog.arboat.top/posts/leetcode-42.trapping-rain-water/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-42.trapping-rain-water/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-42.trapping-rain-water/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-42.trapping-rain-water/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-42.trapping-rain-water/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 O(n^2)&lt;/li&gt;
 &lt;li&gt;空间复杂度 O(1)&lt;/li&gt;
@@ -500,18 +500,18 @@ func min(x,y int) int {
     }
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-42.trapping-rain-water/ - </description>
+- https://blog.arboat.top/posts/leetcode-42.trapping-rain-water/ - </description>
         </item>
     
     
     
         <item>
         <title>641.Design Circular Deque</title>
-        <link>https://arboat.github.io/posts/leetcode-641.design-circular-deque/</link>
+        <link>https://blog.arboat.top/posts/leetcode-641.design-circular-deque/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-641.design-circular-deque/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-641.design-circular-deque/ -&lt;h1 id=&#34;front指针指向第一个rear指针指向最后一个下一位&#34;&gt;front指针指向第一个，rear指针指向最后一个下一位&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-641.design-circular-deque/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-641.design-circular-deque/ -&lt;h1 id=&#34;front指针指向第一个rear指针指向最后一个下一位&#34;&gt;front指针指向第一个，rear指针指向最后一个下一位&lt;/h1&gt;
 &lt;p&gt;Go:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;type MyCircularDeque struct {
     data []int //data容量为实际长度+1
@@ -621,18 +621,18 @@ func (this *MyCircularDeque) IsFull() bool {
 * param_7 := obj.IsEmpty();
 * param_8 := obj.IsFull();
 */&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-641.design-circular-deque/ - </description>
+- https://blog.arboat.top/posts/leetcode-641.design-circular-deque/ - </description>
         </item>
     
     
     
         <item>
         <title>84.Largest Rectangle in Histogram</title>
-        <link>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</link>
+        <link>https://blog.arboat.top/posts/leetcode-142.linked-list-cycle-ii/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/ -&lt;h1 id=&#34;快慢指针&#34;&gt;快慢指针&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-142.linked-list-cycle-ii/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-142.linked-list-cycle-ii/ -&lt;h1 id=&#34;快慢指针&#34;&gt;快慢指针&lt;/h1&gt;
 &lt;p&gt;2(F+a)=F+a+b+a -&amp;gt; F=b&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度： O(n)&lt;/li&gt;
@@ -700,18 +700,18 @@ func (this *MyCircularDeque) IsFull() bool {
             head=head.next
         return None
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-142.linked-list-cycle-ii/ - </description>
+- https://blog.arboat.top/posts/leetcode-142.linked-list-cycle-ii/ - </description>
         </item>
     
     
     
         <item>
         <title>84.Largest Rectangle in Histogram</title>
-        <link>https://arboat.github.io/posts/leetcode-84.largest-rectangle-in-histogram/</link>
+        <link>https://blog.arboat.top/posts/leetcode-84.largest-rectangle-in-histogram/</link>
         <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-84.largest-rectangle-in-histogram/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-84.largest-rectangle-in-histogram/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-84.largest-rectangle-in-histogram/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-84.largest-rectangle-in-histogram/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 O(n^2)&lt;/li&gt;
 &lt;li&gt;空间复杂度 O(1)&lt;/li&gt;
@@ -804,18 +804,18 @@ func max(x, y int) int {
     return y
 }
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-84.largest-rectangle-in-histogram/ - </description>
+- https://blog.arboat.top/posts/leetcode-84.largest-rectangle-in-histogram/ - </description>
         </item>
     
     
     
         <item>
         <title>283.Move Zeroes</title>
-        <link>https://arboat.github.io/posts/leetcode-283.move-zeroes/</link>
+        <link>https://blog.arboat.top/posts/leetcode-283.move-zeroes/</link>
         <pubDate>Fri, 01 May 2020 00:00:06 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-283.move-zeroes/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-283.move-zeroes/ -&lt;ul&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-283.move-zeroes/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-283.move-zeroes/ -&lt;ul&gt;
 &lt;li&gt;时间复杂度:O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度:O(1)&lt;/li&gt;
 &lt;/ul&gt;
@@ -891,7 +891,7 @@ func max(x, y int) int {
                     nums[i]=0
                 j+=1
             i+=1&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-283.move-zeroes/ - </description>
+- https://blog.arboat.top/posts/leetcode-283.move-zeroes/ - </description>
         </item>
     
     

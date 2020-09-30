@@ -1,23 +1,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArBlog</title>
-    <link>https://arboat.github.io/</link>
+    <link>https://blog.arboat.top/</link>
     <description>Recent content on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
     
-        <atom:link href="https://arboat.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.arboat.top/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>11.ContainerWIthMostWater</title>
-        <link>https://arboat.github.io/posts/leetcode-11.containerwithmostwater/</link>
+        <link>https://blog.arboat.top/posts/leetcode-11.containerwithmostwater/</link>
         <pubDate>Fri, 01 May 2020 00:00:01 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-11.containerwithmostwater/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-11.containerwithmostwater/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-11.containerwithmostwater/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-11.containerwithmostwater/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 O(N^2)&lt;/li&gt;
 &lt;li&gt;空间复杂度 O(1)&lt;/li&gt;
@@ -89,18 +89,18 @@ func min(a,b int) int {
                 i+=1
         return m
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-11.containerwithmostwater/ - </description>
+- https://blog.arboat.top/posts/leetcode-11.containerwithmostwater/ - </description>
         </item>
     
     
     
         <item>
         <title>1.Two Sum</title>
-        <link>https://arboat.github.io/posts/leetcode-1.two-sum.md/</link>
+        <link>https://blog.arboat.top/posts/leetcode-1.two-sum.md/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-1.two-sum.md/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-1.two-sum.md/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-1.two-sum.md/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-1.two-sum.md/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(n^2)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(1)&lt;/li&gt;
@@ -149,18 +149,18 @@ func min(a,b int) int {
                 return [dic[v2],k1]
             dic[v1]=k1
         return {}&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-1.two-sum.md/ - </description>
+- https://blog.arboat.top/posts/leetcode-1.two-sum.md/ - </description>
         </item>
     
     
     
         <item>
         <title>15.Three Sum</title>
-        <link>https://arboat.github.io/posts/leetcode-15.three-sum.md/</link>
+        <link>https://blog.arboat.top/posts/leetcode-15.three-sum.md/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-15.three-sum.md/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-15.three-sum.md/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-15.three-sum.md/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-15.three-sum.md/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(n^3)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(n)&lt;/li&gt;
@@ -262,18 +262,18 @@ func min(a,b int) int {
                      while i&amp;lt;j and nums[j] == nums[j+1]:j-=1
          return res    
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-15.three-sum.md/ - </description>
+- https://blog.arboat.top/posts/leetcode-15.three-sum.md/ - </description>
         </item>
     
     
     
         <item>
         <title>189. Rotate Array</title>
-        <link>https://arboat.github.io/posts/leetcode-189.-rotate-array/</link>
+        <link>https://blog.arboat.top/posts/leetcode-189.-rotate-array/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-189.-rotate-array/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-189.-rotate-array/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-189.-rotate-array/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-189.-rotate-array/ -&lt;h1 id=&#34;暴力法&#34;&gt;暴力法&lt;/h1&gt;
 &lt;p&gt;时间复杂度O(n*k),空间负载度O(1)&lt;/p&gt;
 &lt;h1 id=&#34;额外数组法&#34;&gt;额外数组法&lt;/h1&gt;
 &lt;p&gt;下标为 i 的我们把它放到 (i+k)%数组长度 的位置。然后把新的数组拷贝到原数组中。&lt;/p&gt;
@@ -371,18 +371,18 @@ func reverse(nums[]int,start,end int){
                 count+=1
                 if i == current:break
             i+=1&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-189.-rotate-array/ - </description>
+- https://blog.arboat.top/posts/leetcode-189.-rotate-array/ - </description>
         </item>
     
     
     
         <item>
         <title>242.Valid Anagram</title>
-        <link>https://arboat.github.io/posts/leetcode-242.valid-anagram/</link>
+        <link>https://blog.arboat.top/posts/leetcode-242.valid-anagram/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-242.valid-anagram/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-242.valid-anagram/ -&lt;p&gt;question:
+        <guid>https://blog.arboat.top/posts/leetcode-242.valid-anagram/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-242.valid-anagram/ -&lt;p&gt;question:
 1.大小写
 2.完全相同&lt;/p&gt;
 &lt;h1 id=&#34;先分别排序再比较&#34;&gt;先分别排序，再比较&lt;/h1&gt;
@@ -447,18 +447,18 @@ func reverse(nums[]int,start,end int){
     def isAnagram(self, s: str, t: str) -&amp;gt; bool:
         return collections.Counter(s) == collections.Counter(t)
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-242.valid-anagram/ - </description>
+- https://blog.arboat.top/posts/leetcode-242.valid-anagram/ - </description>
         </item>
     
     
     
         <item>
         <title>26. Remove Duplicates from Sorted Array</title>
-        <link>https://arboat.github.io/posts/leetcode-26.-remove-duplicates-from-sorted-array/</link>
+        <link>https://blog.arboat.top/posts/leetcode-26.-remove-duplicates-from-sorted-array/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-26.-remove-duplicates-from-sorted-array/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-26.-remove-duplicates-from-sorted-array/ -&lt;h1 id=&#34;双指针&#34;&gt;双指针&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-26.-remove-duplicates-from-sorted-array/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-26.-remove-duplicates-from-sorted-array/ -&lt;h1 id=&#34;双指针&#34;&gt;双指针&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度：O(n)&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(1)&lt;/li&gt;
@@ -488,18 +488,18 @@ func reverse(nums[]int,start,end int){
                 i+=1
                 nums[i]=nums[j]
         return i+1 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-26.-remove-duplicates-from-sorted-array/ - </description>
+- https://blog.arboat.top/posts/leetcode-26.-remove-duplicates-from-sorted-array/ - </description>
         </item>
     
     
     
         <item>
         <title>49.Group Anagrams</title>
-        <link>https://arboat.github.io/posts/leetcode-49.group-anagrams/</link>
+        <link>https://blog.arboat.top/posts/leetcode-49.group-anagrams/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-49.group-anagrams/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-49.group-anagrams/ -&lt;p&gt;question:
+        <guid>https://blog.arboat.top/posts/leetcode-49.group-anagrams/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-49.group-anagrams/ -&lt;p&gt;question:
 1.大小写
 2.完全相同&lt;/p&gt;
 &lt;h1 id=&#34;先计算每个字符串中数字次数的数组再存入map返回map-value的数组&#34;&gt;先计算每个字符串中数字次数的数组，再存入map，返回map value的数组&lt;/h1&gt;
@@ -536,18 +536,18 @@ func strKey(s string)[26]int{
     }
     return res
 }&lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-49.group-anagrams/ - </description>
+- https://blog.arboat.top/posts/leetcode-49.group-anagrams/ - </description>
         </item>
     
     
     
         <item>
         <title>88.Merge Sorted Array</title>
-        <link>https://arboat.github.io/posts/leetcode-88.merge-sorted-array/</link>
+        <link>https://blog.arboat.top/posts/leetcode-88.merge-sorted-array/</link>
         <pubDate>Fri, 01 May 2020 00:00:00 +0800</pubDate>
         
-        <guid>https://arboat.github.io/posts/leetcode-88.merge-sorted-array/</guid>
-        <description>ArBlog https://arboat.github.io/posts/leetcode-88.merge-sorted-array/ -&lt;h1 id=&#34;合并后排序&#34;&gt;合并后排序&lt;/h1&gt;
+        <guid>https://blog.arboat.top/posts/leetcode-88.merge-sorted-array/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/leetcode-88.merge-sorted-array/ -&lt;h1 id=&#34;合并后排序&#34;&gt;合并后排序&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;时间复杂度 : O((n+m)log(n+m))。&lt;/li&gt;
 &lt;li&gt;空间复杂度 : O(1)。&lt;/li&gt;
@@ -603,7 +603,7 @@ func strKey(s string)[26]int{
             for i in range(0,p2+1):
                 nums1[i] = nums2[i]
 &lt;/code&gt;&lt;/pre&gt;
-- https://arboat.github.io/posts/leetcode-88.merge-sorted-array/ - </description>
+- https://blog.arboat.top/posts/leetcode-88.merge-sorted-array/ - </description>
         </item>
     
     

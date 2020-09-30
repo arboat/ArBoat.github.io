@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>backTracking on ArBlog</title>
-    <link>https://arboat.github.io/tags/backtracking/</link>
+    <link>https://blog.arboat.top/tags/backtracking/</link>
     <description>Recent content in backTracking on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:03 +0800</lastBuildDate>
     
-	<atom:link href="https://arboat.github.io/tags/backtracking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.arboat.top/tags/backtracking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>17.Letter Combinations of a Phone Number</title>
-      <link>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</link>
+      <link>https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-17.letter-combinations-of-a-phone-number/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-17.letter-combinations-of-a-phone-number/</guid>
       <description>递归:
  m 是输入中对应 3 个字母的数字个数，n 是输入中对应 4 个字母的数字个数 时间复杂度：O((3^m+4^n) 空间复杂度：O(m+n)  Go:
 var phoneMap = map[string]string { &amp;quot;2&amp;quot;: &amp;quot;abc&amp;quot;, &amp;quot;3&amp;quot;: &amp;quot;def&amp;quot;, &amp;quot;4&amp;quot;: &amp;quot;ghi&amp;quot;, &amp;quot;5&amp;quot;: &amp;quot;jkl&amp;quot;, &amp;quot;6&amp;quot;: &amp;quot;mno&amp;quot;, &amp;quot;7&amp;quot;: &amp;quot;pqrs&amp;quot;, &amp;quot;8&amp;quot;: &amp;quot;tuv&amp;quot;, &amp;quot;9&amp;quot;: &amp;quot;wxyz&amp;quot;, } func letterCombinations(digits string) []string { res :=[]string{} // 特殊情况 if len(digits) == 0 { return res } var backTrack func(path string, cur int) backTrack = func(path string, cur int) { if cur == len(digits) { res = append(res,path) return } // string index 的值要在string digit:=string(digits[cur]) letters:=phoneMap[digit] for _,v:=range letters{ path = path + string(v) backTrack(path,cur+1) path = path[:len(path)-1] } } backTrack(&amp;quot;&amp;quot;,0) return res }  </description>
@@ -24,10 +24,10 @@ var phoneMap = map[string]string { &amp;quot;2&amp;quot;: &amp;quot;abc&amp;quot
     
     <item>
       <title>46.Permutations</title>
-      <link>https://arboat.github.io/posts/leetcode-46.permutations/</link>
+      <link>https://blog.arboat.top/posts/leetcode-46.permutations/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-46.permutations/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-46.permutations/</guid>
       <description>递归:
  时间复杂度：O((n*n!) 空间复杂度：O(n*n!)  Go:
 func permute(nums []int) [][]int { res := [][]int{} item := []int{} used := make([]bool,len(nums)) var backtrack func([]int,[]int,[]bool) backtrack = func(item, nums[]int, used[]bool){ if len(item) == len(nums) { tmp:= make([]int,len(item)) copy(tmp,item) res = append(res,tmp) } for i,v:=range nums { if !used[i]{ //yes used[i] = true item = append(item,v) //back backtrack(item,nums,used) //no item = item[:len(item)-1] used[i] = false } } } backtrack(item,nums,used) return res } </description>
@@ -35,10 +35,10 @@ func permute(nums []int) [][]int { res := [][]int{} item := []int{} used := make
     
     <item>
       <title>47.Permutations II</title>
-      <link>https://arboat.github.io/posts/leetcode-47.permutations-ii/</link>
+      <link>https://blog.arboat.top/posts/leetcode-47.permutations-ii/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-47.permutations-ii/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-47.permutations-ii/</guid>
       <description>递归:
  时间复杂度：O((n*n!) 空间复杂度：O(n*n!)  Go:
 func permuteUnique(nums []int) [][]int { res := [][]int{} item := []int{} used := make([]bool,len(nums)) sort.Ints(nums) var backtrack func([]int,[]int,[]bool) backtrack = func(item, nums[]int, used[]bool){ if len(item) == len(nums) { tmp:= make([]int,len(item)) copy(tmp,item) res = append(res,tmp) } for i,v:=range nums { if !used[i]{ //剪枝 !更彻底，顺序 if i&amp;gt;0 &amp;amp;&amp;amp; v == nums[i-1] &amp;amp;&amp;amp; !used[i-1] { //if i&amp;gt;0 &amp;amp;&amp;amp; v == nums[i-1] &amp;amp;&amp;amp; used[i-1] { continue } //yes used[i] = true item = append(item,v) //back backtrack(item,nums,used) //no item = item[:len(item)-1] used[i] = false } } } backtrack(item,nums,used) return res } </description>
@@ -46,10 +46,10 @@ func permuteUnique(nums []int) [][]int { res := [][]int{} item := []int{} used :
     
     <item>
       <title>50.Pow(x, n)</title>
-      <link>https://arboat.github.io/posts/leetcode-50.powx-n/</link>
+      <link>https://blog.arboat.top/posts/leetcode-50.powx-n/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-50.powx-n/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-50.powx-n/</guid>
       <description>递归:
  时间复杂度O(logn) 空间复杂度O(logn)  Go:
 func myPow(x float64, n int) float64 { if n &amp;gt;= 0 { return dealer(x,n) } return 1.0/dealer(x,-n) } func dealer(x float64, n int) float64 { if n == 0 { return 1 } temp := dealer(x,n/2) if n%2 == 0 { return temp*temp } return temp * temp * x }  迭代
@@ -59,10 +59,10 @@ func myPow(x float64, n int) float64 { if n &amp;gt;= 0 { return dealer(x,n) } r
     
     <item>
       <title>51.N-Queens</title>
-      <link>https://arboat.github.io/posts/leetcode-51.n-queens/</link>
+      <link>https://blog.arboat.top/posts/leetcode-51.n-queens/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-51.n-queens/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-51.n-queens/</guid>
       <description>递归:
  时间复杂度O(N!) 空间复杂度O(N)  Go:
 func solveNQueens(n int) [][]string { res:=[][]string{} queens:=make([]int,n) for i:=range queens { queens[i] = -1 } c,d1,d2:=map[int]bool{},map[int]bool{},map[int]bool{} var backTrack func(queens[]int,row int,c,d1,d2 map[int]bool) backTrack = func(queens[]int,row int,c,d1,d2 map[int]bool){ if row == n{ solution:=generate(queens,n) res = append(res,solution) return } for i:=0;i&amp;lt;n;i++{ if c[i] || d1[row-i] || d2[row+i] { continue } queens[row]=i c[i], d1[row-i], d2[row+i] = true, true, true backTrack(queens,row+1,c,d1,d2) queens[row]=-1 delete(c,i) delete(d1,row-i) delete(d2,row+i) } } backTrack(queens,0,c,d1,d2) return res } func generate(queens[]int, n int) []string { solution:=[]string{} for i:=0;i&amp;lt;n;i++{ row:=make([]byte,n) for j:=0;j&amp;lt;n;j++{ row[j]=&#39;.</description>
@@ -70,10 +70,10 @@ func solveNQueens(n int) [][]string { res:=[][]string{} queens:=make([]int,n) fo
     
     <item>
       <title>77.Combinations</title>
-      <link>https://arboat.github.io/posts/leetcode-77.combinations/</link>
+      <link>https://blog.arboat.top/posts/leetcode-77.combinations/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-77.combinations/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-77.combinations/</guid>
       <description>递归:
  时间复杂度：O(( k n)×k) 空间复杂度：O(n)  Go:
 func combine(n int, k int) [][]int { res:= [][]int{} item:= []int{} var dfs func(int) dfs = func(cur int) { if len(item) + (n-cur+1) &amp;lt; k { return } //copy不会影响原slice if len(item) == k { temp:=make([]int,k) copy(temp,item) res = append(res, temp) return } // yes 回溯 item = append(item, cur) dfs(cur+1) item = item[:len(item)-1] // no dfs(cur+1) } dfs(1) return res }  回溯法 注意剪枝</description>
@@ -81,10 +81,10 @@ func combine(n int, k int) [][]int { res:= [][]int{} item:= []int{} var dfs func
     
     <item>
       <title>78.Subsets</title>
-      <link>https://arboat.github.io/posts/leetcode-78.subsets/</link>
+      <link>https://blog.arboat.top/posts/leetcode-78.subsets/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-78.subsets/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-78.subsets/</guid>
       <description>递归:
  时间复杂度：O((N*2^N) 空间复杂度：O(N*2^N)  Go:
 func combine(n int, k int) [][]int { res:= [][]int{} item:= []int{} var dfs func(int) dfs = func(cur int) { if len(item) + (n-cur+1) &amp;lt; k { return } //copy不会影响原slice if len(item) == k { temp:=make([]int,k) copy(temp,item) res = append(res, temp) return } // yes 回溯 item = append(item, cur) dfs(cur+1) item = item[:len(item)-1] // no dfs(cur+1) } dfs(1) return res }  回溯法 注意剪枝</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ArBlog</title>
-    <link>https://arboat.github.io/categories/</link>
+    <link>https://blog.arboat.top/categories/</link>
     <description>Recent content in Categories on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Jul 2020 00:05:00 +0800</lastBuildDate>
     
-	<atom:link href="https://arboat.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.arboat.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LeetCode</title>
-      <link>https://arboat.github.io/categories/leetcode/</link>
+      <link>https://blog.arboat.top/categories/leetcode/</link>
       <pubDate>Tue, 21 Jul 2020 00:05:00 +0800</pubDate>
       
-      <guid>https://arboat.github.io/categories/leetcode/</guid>
+      <guid>https://blog.arboat.top/categories/leetcode/</guid>
       <description></description>
     </item>
     

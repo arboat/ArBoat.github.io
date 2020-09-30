@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>deque on ArBlog</title>
-    <link>https://arboat.github.io/tags/deque/</link>
+    <link>https://blog.arboat.top/tags/deque/</link>
     <description>Recent content in deque on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2020 00:05:00 +0800</lastBuildDate>
     
-	<atom:link href="https://arboat.github.io/tags/deque/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.arboat.top/tags/deque/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>239.Sliding Window Maximum</title>
-      <link>https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/</link>
+      <link>https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/</link>
       <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-239.sliding-window-maximum/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-239.sliding-window-maximum/</guid>
       <description>暴力法 有 n-k+1个滑动窗口
  时间复杂度 O(nk) 空间复杂度 O(n-k+1)  deque  时间复杂度 O(n) 空间复杂度 O(n)  Go:
 func maxSlidingWindow(nums []int, k int) []int { if nums == nil { return []int{} } //window 是一个维护当前最大值下表的deque window, res:= make([]int,0), make([]int,0) for i,v:= range nums { // 保证window长度，从左弹 if i&amp;gt;=k &amp;amp;&amp;amp; window[0]&amp;lt;= i-k { window = window[1:] } // 保证window[0]存最大，从右弹 for len(window)&amp;gt;0 &amp;amp;&amp;amp; nums[window[len(window)-1]] &amp;lt;= v{ window = window[:len(window)-1] } window = append(window,i) 第一个窗口 if i &amp;gt;= k-1 { res = append(res, nums[window[0]]) } } return res } </description>
@@ -24,10 +24,10 @@ func maxSlidingWindow(nums []int, k int) []int { if nums == nil { return []int{}
     
     <item>
       <title>641.Design Circular Deque</title>
-      <link>https://arboat.github.io/posts/leetcode-641.design-circular-deque/</link>
+      <link>https://blog.arboat.top/posts/leetcode-641.design-circular-deque/</link>
       <pubDate>Thu, 21 May 2020 00:05:00 +0800</pubDate>
       
-      <guid>https://arboat.github.io/posts/leetcode-641.design-circular-deque/</guid>
+      <guid>https://blog.arboat.top/posts/leetcode-641.design-circular-deque/</guid>
       <description>front指针指向第一个，rear指针指向最后一个下一位 Go:
 type MyCircularDeque struct { data []int //data容量为实际长度+1 front int //指向队列头部第 1 个有效数据的位置 rear int //指向队列尾部（即最后 1 个有效数据）的下一个位置，即下一个从队尾入队元素的位置。 } /** Initialize your data structure here. Set the size of the deque to be k. */ func Constructor(k int) MyCircularDeque { return MyCircularDeque { data: make([]int,k+1,k+1), //rear指向下一个位置所谓data+1 front:0, rear:0, } } /** Adds an item at the front of Deque. Return true if the operation is successful. */ func (this *MyCircularDeque) InsertFront(value int) bool { if this.</description>
     </item>
