@@ -6,6 +6,7 @@
     <description>Recent content in k8s on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:01 +0800</lastBuildDate>
     
 	<atom:link href="https://arboat.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>利用kops在AWS上搭建k8s</title>
       <link>https://arboat.github.io/posts/kops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
       
       <guid>https://arboat.github.io/posts/kops/</guid>
       <description>利用kops在AWS上搭建k8s 工具 kops k8s 官方免费工具，支持aws， 谷歌云等，目前貌似不是特别支持阿里云,（aws的eks $150/month, 谷歌云，阿里云免费提供。）

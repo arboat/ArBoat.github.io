@@ -6,6 +6,7 @@
     <description>Recent content in mysql on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:03 +0000</lastBuildDate>
     
 	<atom:link href="https://arboat.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>mysql 事务和锁整理</title>
       <link>https://arboat.github.io/posts/mysql-transaction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0000</pubDate>
       
       <guid>https://arboat.github.io/posts/mysql-transaction/</guid>
       <description>事务： begin，start transaction 可以加修饰： read only / read write / with consistent snapshot
@@ -31,7 +32,7 @@
     <item>
       <title>mysql 索引整理</title>
       <link>https://arboat.github.io/posts/mysql-index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:02 +0000</pubDate>
       
       <guid>https://arboat.github.io/posts/mysql-index/</guid>
       <description>基础  客户端和服务端用tcp通信，默认端口3306 服务端： 连接管理， 解析和优化，存储引擎 查询缓存： 更新表后实效， 查询字符有区别，包含系统或一些自建函数回失效（now函数） 存储引擎： InnoDB(支持外键、行锁、事务), MyISAM, Memory InnoDB: 划分页， 用来磁盘和内存交互， 一般16kb InnoDB 分为7个页， 页记录串联单向链表， 生成页目录，主键用二分查找槽，再遍历  索引  索引： 页分裂 ；record_type : 0:普通；1:索引目录；2：最小值；3: 最大值 ，索引即是数据 B+叶子节点存储所有记录， 一般不超过4层 聚簇索引：主键的索引 二级索引：用其他和主键一起，先找出主键，在找聚簇索引 联合索引： 多个其他和主键一起 一个b+索引创建了就不会移动位置 MyISAM： 索引和数据分开存储， 相当都是二级索引 索引的代价： 以空间换时间 全值匹配： 正好所有索引, where 顺序无影响 匹配左边的列，匹配列前缀， 联合索引最左边，或精确的下一个可以用到b+索引 排序不能用索引及情况： 1.联合索引排序列asc和desc一致 2.不在同一索引 3。 where中出现非索引；4不能用复杂表达式 需要回表的数据越多，二级索引效率越低 建立索引规则：1.只为搜索排序分组的列建索引。2. 只为基数大的建立索引；3.索引列类型尽量小；4.字符串鼓励用前缀（但不支持排序） 主键 auto_increment; 避免重复  </description>

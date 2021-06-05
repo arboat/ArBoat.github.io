@@ -6,6 +6,7 @@
     <description>Recent content in Logstash on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://arboat.github.io/tags/logstash/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>ELK &#43; Filebeats日志系统搭建与配置 爬坑指北</title>
       <link>https://arboat.github.io/posts/elk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
       
       <guid>https://arboat.github.io/posts/elk/</guid>
       <description>ELK + Filebeats日志系统搭建与配置 爬坑指北 ELK是Elasticsearch, Logstash，Kibana的合称， 在此础上加上Filebeats向ELK发送数据 几个软件最好用同样版本，这里用的是6.4.2
