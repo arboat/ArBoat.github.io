@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gin on ArBlog</title>
+    <link>https://blog.arboat.top/tags/gin/</link>
+    <description>Recent content in Gin on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.arboat.top/tags/gin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gin note</title>
+      <link>https://blog.arboat.top/posts/gin/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/gin/</guid>
+      <description>Gin   run:
+ router := gin.Default() router.Run() // router.Run(&amp;quot;:3000&amp;quot;) for a hard coded port //net/http s := &amp;amp;http.Server{ Addr: confs.FlagSericePort, Handler: router, ReadTimeout: 10 * time.Second, WriteTimeout: 10 * time.Second, MaxHeaderBytes: 1 &amp;lt;&amp;lt; 20, } s.ListenAndServe()    &amp;ldquo;/user/:name/*action&amp;rdquo; name := c.Param(&amp;ldquo;name&amp;rdquo;) action := c.Param(&amp;ldquo;action&amp;rdquo;)
+  firstname := c.DefaultQuery(&amp;ldquo;firstname&amp;rdquo;, &amp;ldquo;Guest&amp;rdquo;) lastname :=c.Query(&amp;ldquo;lastname&amp;rdquo;) // shortcut for c.Request.URL.Query().Get(&amp;ldquo;lastname&amp;rdquo;)
+  message := c.PostForm(&amp;ldquo;message&amp;rdquo;) nick := c.DefaultPostForm(&amp;ldquo;nick&amp;rdquo;, &amp;ldquo;anonymous&amp;rdquo;)
+  binding:&amp;ldquo;required&amp;rdquo; / binding:&amp;quot;-&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
