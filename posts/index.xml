@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ArBlog</title>
+    <link>https://blog.arboat.top/posts/</link>
+    <description>Recent content in Posts on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.arboat.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>项目中用过的aws服务</title>
+      <link>https://blog.arboat.top/posts/aws-services/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:01 +0800</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/aws-services/</guid>
+      <description>Compute EC2 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
+ELB Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.</description>
+    </item>
+    
+    <item>
+      <title>利用kops在AWS上搭建k8s</title>
+      <link>https://blog.arboat.top/posts/kops/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/kops/</guid>
+      <description>利用kops在AWS上搭建k8s 工具 kops k8s 官方免费工具，支持aws， 谷歌云等，目前貌似不是特别支持阿里云,（aws的eks $150/month, 谷歌云，阿里云免费提供。）
+dashboard k8s 官方免费工具，配合heapster插件进行监控， 可查看日志，管理部署，容器,服务的编辑和伸缩等。
+awscli aws客户端
+kubectl k8s客户端
+步骤 1.两个常用值设为环境变量 export KOPS_CLUSTER_NAME=test.test.com export KOPS_STATE_STORE=s3://test-kops  2.创建以及启动s3 bucket 2.1 创建s3 aws s3api create-bucket --bucket test-kops --region us-east-1 —create-bucket- configuration LocationConstraint=us-east-1  *Regions outside of us-east-1 require the appropriate LocationConstraint to be specified in order to create the bucket in the desired region *
+2.2 启动s3 aws s3api put-bucket-versioning --bucket test-kops --versioning-configuration Status=Enabled  3.</description>
+    </item>
+    
+    <item>
+      <title>ELK &#43; Filebeats日志系统搭建与配置 爬坑指北</title>
+      <link>https://blog.arboat.top/posts/elk/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/elk/</guid>
+      <description>ELK + Filebeats日志系统搭建与配置 爬坑指北 ELK是Elasticsearch, Logstash，Kibana的合称， 在此础上加上Filebeats向ELK发送数据 几个软件最好用同样版本，这里用的是6.4.2
+ Filebeats filebeats用来收集日志并发送到设置好的服务器
+filebeats 需要root权限才能执行
+配置 fields.yml 默认输出到服务器5044端口
+#========\ Filebeat inputs =========\ filebeat.inputs: # Each - is an input. Most options can be set at the input level, so # you can use different inputs for various configurations. # Below are the input specific configurations. - type: log # Change to true to enable this input configuration. enabled: true # Paths that should be crawled and fetched.</description>
+    </item>
+    
+    <item>
+      <title>mysql 事务和锁整理</title>
+      <link>https://blog.arboat.top/posts/mysql-transaction/</link>
+      <pubDate>Fri, 01 May 2020 00:00:03 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/mysql-transaction/</guid>
+      <description>事务： begin，start transaction 可以加修饰： read only / read write / with consistent snapshot
+  脏读(发生回滚)、不可重复读（读过程被修改不一致）、幻读（新加了一条）。
+  隔离级别
+ 脏读， 不可重复读， 幻影写 未提交读 已提交读 x 可重复读 x x (innoDB x) 串行化 x x x  隔离级别越高，事务的并发度就越低。唯一的区别就在于，InnoDB 在可重复读（REPEATABLE READ）的级别就解决了幻读的问题。这也是InnoDB使用可重复读 作为事务默认隔离级别的原因
+  读-读即并发事务同时访问同一行数据记录。由于两个事务都进行只读操作，不会对记录造成任何影响，因此并发读完全允许。
+  写-写即并发事务同时修改同一行数据记录。这种情况下可能导致脏写问题，这是任何情况下都不允许发生的，因此只能通过加锁实现，也就是当一个事务需要对某行记录进行修改时，首先会先给这条记录加锁，如果加锁成功则继续执行，否则就排队等待，事务执行完成或回滚会自动释放锁。
+  读-写即一个事务进行读取操作，另一个进行写入操作。这种情况下可能会产生ww最好的方案是读操作利用多版本并发控制（MVCC），写操作进行加锁。
+  按锁作用的数据范围进行分类的话，锁可以分为行级锁和表级锁。
+   行级锁：作用在数据行上，锁的粒度比较小。 表级锁：作用在整张数据表上，锁的粒度比较大。    为了实现读-读之间不受影响，并且写-写、读-写之间能够相互阻塞，Mysql使用了读写锁的思路进行实现，具体来说就是分为了共享锁和排它锁：
+ 共享锁(Shared Locks)：简称S锁，在事务要读取一条记录时，需要先获取该记录的S锁。S锁可以在同一时刻被多个事务同时持有。我们可以用select ...... lock in share mode;的方式手工加上一把S锁。 排他锁(Exclusive Locks)：简称X锁，在事务要改动一条记录时，需要先获取该记录的X锁。X锁在同一时刻最多只能被一个事务持有。X锁的加锁方式有两种，第一种是自动加锁，在对数据进行增删改的时候，都会默认加上一个X锁。还有一种是手工加锁，我们用一个FOR UPDATE给一行数据加上一个X锁【行锁】 意向锁可以认为是S锁和X锁在数据表上的标识，通过意向锁可以快速判断表中是否有记录被上锁，从而避免通过遍历的方式来查看表中有没有记录被上锁，提升加锁效率.</description>
+    </item>
+    
+    <item>
+      <title>mysql 索引整理</title>
+      <link>https://blog.arboat.top/posts/mysql-index/</link>
+      <pubDate>Fri, 01 May 2020 00:00:02 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/mysql-index/</guid>
+      <description>基础  客户端和服务端用tcp通信，默认端口3306 服务端： 连接管理， 解析和优化，存储引擎 查询缓存： 更新表后实效， 查询字符有区别，包含系统或一些自建函数回失效（now函数） 存储引擎： InnoDB(支持外键、行锁、事务), MyISAM, Memory InnoDB: 划分页， 用来磁盘和内存交互， 一般16kb InnoDB 分为7个页， 页记录串联单向链表， 生成页目录，主键用二分查找槽，再遍历  索引  索引： 页分裂 ；record_type : 0:普通；1:索引目录；2：最小值；3: 最大值 ，索引即是数据 B+叶子节点存储所有记录， 一般不超过4层 聚簇索引：主键的索引 二级索引：用其他和主键一起，先找出主键，在找聚簇索引 联合索引： 多个其他和主键一起 一个b+索引创建了就不会移动位置 MyISAM： 索引和数据分开存储， 相当都是二级索引 索引的代价： 以空间换时间 全值匹配： 正好所有索引, where 顺序无影响 匹配左边的列，匹配列前缀， 联合索引最左边，或精确的下一个可以用到b+索引 排序不能用索引及情况： 1.联合索引排序列asc和desc一致 2.不在同一索引 3。 where中出现非索引；4不能用复杂表达式 需要回表的数据越多，二级索引效率越低 建立索引规则：1.只为搜索排序分组的列建索引。2. 只为基数大的建立索引；3.索引列类型尽量小；4.字符串鼓励用前缀（但不支持排序） 主键 auto_increment; 避免重复  </description>
+    </item>
+    
+    <item>
+      <title>Nginx log 每日切分脚本</title>
+      <link>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</link>
+      <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</guid>
+      <description>Nginx log 每日切分脚本 #!/bin/bash LOG_HOME=&amp;quot;/xxx/logs/&amp;quot; log_file_commaccess=access.log log_file_commerror=error.log pid=/xxx/xxx/nginx.pid yestime=`date -d &#39;-1 day&#39; +%Y%m%d` mv ${LOG_HOME}/${log_file_commaccess} ${LOG_HOME}/${log_file_commaccess}.${yestime} mv ${LOG_HOME}/${log_file_commerror} ${LOG_HOME}/${log_file_commerror}.${yestime} sudo kill -USR1 `cat $pid` // 重启log信号量  添加crontab -e</description>
+    </item>
+    
+    <item>
+      <title>redis note</title>
+      <link>https://blog.arboat.top/posts/redis/</link>
+      <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/redis/</guid>
+      <description>特点及基本结构   高性能， 高可靠， 高可扩展
+  五种主要结构
+ string : int, raw, embstr list: ziplist + linkedlist hash: ziplist + hashtable zset: ziplist + skiplist set: hashtable + inset    redis 单线程读写指对网络io和数据读写用一个线程，避免多线程并发的控制问题，多路复用模型
+  备份有rdb和aof两种:
+    aof 三种写回机制always ，evevrysec，no ，日志重写不会阻塞，// 恢复慢
+  rdb snapshot 恢复快 bgsave copy-on-write（fork子进程），增量快照 //数据丢失
+  主从同步
+  哨兵机制
+  string开销大
+   redis消息队列： 消息保序，处理重复消息，保证消息可靠性   加锁和原子操作， 原子操作有限， 分布式锁： 单节点用一个key来当锁， redlock 事务： multi exec ，discard watch ， 能保证一致性和隔离性， 不能保证持久性， 命令语法没问题时可以保证  一致性， 雪崩，击穿，穿透   一致性:</description>
+    </item>
+    
+    <item>
+      <title>Gin note</title>
+      <link>https://blog.arboat.top/posts/gin/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/gin/</guid>
+      <description>Gin   run:
+ router := gin.Default() router.Run() // router.Run(&amp;quot;:3000&amp;quot;) for a hard coded port //net/http s := &amp;amp;http.Server{ Addr: confs.FlagSericePort, Handler: router, ReadTimeout: 10 * time.Second, WriteTimeout: 10 * time.Second, MaxHeaderBytes: 1 &amp;lt;&amp;lt; 20, } s.ListenAndServe()    &amp;ldquo;/user/:name/*action&amp;rdquo; name := c.Param(&amp;ldquo;name&amp;rdquo;) action := c.Param(&amp;ldquo;action&amp;rdquo;)
+  firstname := c.DefaultQuery(&amp;ldquo;firstname&amp;rdquo;, &amp;ldquo;Guest&amp;rdquo;) lastname :=c.Query(&amp;ldquo;lastname&amp;rdquo;) // shortcut for c.Request.URL.Query().Get(&amp;ldquo;lastname&amp;rdquo;)
+  message := c.PostForm(&amp;ldquo;message&amp;rdquo;) nick := c.DefaultPostForm(&amp;ldquo;nick&amp;rdquo;, &amp;ldquo;anonymous&amp;rdquo;)
+  binding:&amp;ldquo;required&amp;rdquo; / binding:&amp;quot;-&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>gRPC note</title>
+      <link>https://blog.arboat.top/posts/grpc/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.arboat.top/posts/grpc/</guid>
+      <description>By default, gRPC uses protocol buffers as the Interface Definition Language (IDL) for describing both the service interface and the structure of the payload messages. It is possible to use other alternatives if desired.一共四种模式
+  单项 RPC，即客户端发送一个请求给服务端，从服务端获取一个应答，就像一次普通的函数调用。
+  服务端流式 RPC，即客户端发送一个请求给服务端，可获取一个数据流用来读取一系列消息。客户端从返回的数据流里一直读取直到没有更多消息为止。
+  客户端流式 RPC，即客户端用提供的一个数据流写入并发送一系列消息给服务端。一旦客户端完成消息写入，就等待服务端读取这些消息并返回应答。
+  双向流式 RPC，即两边都可以分别通过一个读写数据流来发送一系列消息。这两个数据流操作是相互独立的，所以客户端和服务端能按其希望的任意顺序读写，例如：服务端可以在写应答前等待所有的客户端消息，或者它可以先读一个消息再写一个消息，或者是读写相结合的其他方式。每个数据流里消息的顺序会被保持。
+  同步 RPC 调用一直会阻塞直到从服务端获得一个应答，这与 RPC 希望的抽象最为接近。另一方面网络内部是异步的，并且在许多场景下能够在不阻塞当前线程的情况下启动 RPC 是非常有用的。
+  无论客户端还是服务端均可以再任何时间取消一个 RPC 。一个取消会立即终止 RPC 这样可以避免更多操作被执行。它不是一个&amp;quot;撤销&amp;rdquo;， 在取消前已经完成的不会被回滚。当然，通过同步调用的 RPC 不能被取消，因为直到 RPC 结束前，程序控制权还没有交还给应用。</description>
+    </item>
+    
+  </channel>
+</rss>

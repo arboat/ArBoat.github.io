@@ -1,0 +1,815 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArBlog</title>
+    <link>https://blog.arboat.top/</link>
+    <description>Recent content on ArBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 00:00:01 +0800</lastBuildDate>
+    
+        <atom:link href="https://blog.arboat.top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>项目中用过的aws服务</title>
+        <link>https://blog.arboat.top/posts/aws-services/</link>
+        <pubDate>Mon, 01 Feb 2021 00:00:01 +0800</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/aws-services/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/aws-services/ -&lt;h1 id=&#34;compute&#34;&gt;&lt;strong&gt;Compute&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ec2&#34;&gt;&lt;strong&gt;EC2&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.&lt;/p&gt;
+&lt;h2 id=&#34;elb&#34;&gt;&lt;strong&gt;ELB&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions. It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones. Elastic Load Balancing offers three types of load balancers that all feature the high availability, automatic scaling, and robust security necessary to make your applications fault tolerant.&lt;/p&gt;
+&lt;h1 id=&#34;storage&#34;&gt;&lt;strong&gt;Storage&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;s3&#34;&gt;&lt;strong&gt;s3&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.&lt;/p&gt;
+&lt;h2 id=&#34;ebs&#34;&gt;&lt;strong&gt;EBS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Elastic Block Store (EBS) is an easy to use, high performance block storage service designed for use with Amazon Elastic Compute Cloud (EC2) for both throughput and transaction intensive workloads at any scale. A broad range of workloads, such as relational and non-relational databases, enterprise applications, containerized applications, big data analytics engines, file systems, and media workflows are widely deployed on Amazon EBS.&lt;/p&gt;
+&lt;h1 id=&#34;database&#34;&gt;&lt;strong&gt;Database&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;rds&#34;&gt;&lt;strong&gt;RDS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.&lt;/p&gt;
+&lt;h2 id=&#34;elasticache&#34;&gt;&lt;strong&gt;ElastiCache&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon ElastiCache allows you to seamlessly set up, run, and scale popular open-Source compatible in-memory data stores in the cloud. Build data-intensive apps or boost the performance of your existing databases by retrieving data from high throughput and low latency in-memory data stores. Amazon ElastiCache is a popular choice for real-time use cases like Caching, Session Stores, Gaming, Geospatial Services, Real-Time Analytics, and Queuing.&lt;/p&gt;
+&lt;h1 id=&#34;networking--content-delivery&#34;&gt;&lt;strong&gt;Networking &amp;amp; Content Delivery&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;vpc&#34;&gt;&lt;strong&gt;VPC&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.&lt;/p&gt;
+&lt;h2 id=&#34;cloudfront&#34;&gt;&lt;strong&gt;CloudFront&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment. CloudFront is integrated with AWS – both physical locations that are directly connected to the AWS global infrastructure, as well as other AWS services. CloudFront works seamlessly with services including AWS Shield for DDoS mitigation, Amazon S3, Elastic Load Balancing or Amazon EC2 as origins for your applications, and Lambda@Edge to run custom code closer to customers’ users and to customize the user experience. Lastly, if you use AWS origins such as Amazon S3, Amazon EC2 or Elastic Load Balancing, you don’t pay for any data transferred between these services and CloudFront.&lt;/p&gt;
+&lt;h2 id=&#34;route-53&#34;&gt;&lt;strong&gt;Route 53&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like &lt;a href=&#34;http://www.example.com&#34;&gt;www.example.com&lt;/a&gt; into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well.&lt;/p&gt;
+&lt;h1 id=&#34;management--governance&#34;&gt;&lt;strong&gt;Management &amp;amp; Governance&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;cloudwatch&#34;&gt;&lt;strong&gt;CloudWatch&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications, and services that run on AWS and on-premises servers. You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to keep your applications running smoothly.&lt;/p&gt;
+&lt;h1 id=&#34;application-integration&#34;&gt;&lt;strong&gt;Application Integration&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;sns&#34;&gt;&lt;strong&gt;SNS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Simple Notification Service (SNS) is a highly available, durable, secure, fully managed pub/sub messaging service that enables you to decouple microservices, distributed systems, and serverless applications. Amazon SNS provides topics for high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints for parallel processing, including Amazon SQS queues, AWS Lambda functions, and HTTP/S webhooks. Additionally, SNS can be used to fan out notifications to end users using mobile push, SMS, and email.&lt;/p&gt;
+&lt;h1 id=&#34;containers&#34;&gt;&lt;strong&gt;Containers&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;ecr&#34;&gt;&lt;strong&gt;ECR&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications. Integration with AWS Identity and Access Management (IAM) provides resource-level control of each repository. With Amazon ECR, there are no upfront fees or commitments. You pay only for the amount of data you store in your repositories and data transferred to the Internet.&lt;/p&gt;
+&lt;h1 id=&#34;kafka&#34;&gt;&lt;strong&gt;Kafka&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;msk&#34;&gt;&lt;strong&gt;MSK&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Amazon MSK is a fully managed service that makes it easy for you to build and run applications that use Apache Kafka to process streaming data. Apache Kafka is an open-source platform for building real-time streaming data pipelines and applications. With Amazon MSK, you can use native Apache Kafka APIs to populate data lakes, stream changes to and from databases, and power machine learning and analytics applications.&lt;/p&gt;
+- https://blog.arboat.top/posts/aws-services/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>利用kops在AWS上搭建k8s</title>
+        <link>https://blog.arboat.top/posts/kops/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/kops/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/kops/ -&lt;h1 id=&#34;利用kops在aws上搭建k8s&#34;&gt;利用kops在AWS上搭建k8s&lt;/h1&gt;
+&lt;h2 id=&#34;工具&#34;&gt;工具&lt;/h2&gt;
+&lt;h3 id=&#34;kops&#34;&gt;kops&lt;/h3&gt;
+&lt;p&gt;k8s 官方免费工具，支持aws， 谷歌云等，目前貌似不是特别支持阿里云,（aws的eks $150/month, 谷歌云，阿里云免费提供。）&lt;/p&gt;
+&lt;h3 id=&#34;dashboard&#34;&gt;dashboard&lt;/h3&gt;
+&lt;p&gt;k8s 官方免费工具，配合heapster插件进行监控， 可查看日志，管理部署，容器,服务的编辑和伸缩等。&lt;/p&gt;
+&lt;h3 id=&#34;awscli&#34;&gt;awscli&lt;/h3&gt;
+&lt;p&gt;aws客户端&lt;/p&gt;
+&lt;h3 id=&#34;kubectl&#34;&gt;kubectl&lt;/h3&gt;
+&lt;p&gt;k8s客户端&lt;/p&gt;
+&lt;h2 id=&#34;步骤&#34;&gt;步骤&lt;/h2&gt;
+&lt;h3 id=&#34;1两个常用值设为环境变量&#34;&gt;1.两个常用值设为环境变量&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;export KOPS_CLUSTER_NAME=test.test.com
+export KOPS_STATE_STORE=s3://test-kops
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;2创建以及启动s3-bucket&#34;&gt;2.创建以及启动s3 bucket&lt;/h3&gt;
+&lt;h4 id=&#34;21-创建s3&#34;&gt;2.1 创建s3&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;aws s3api create-bucket --bucket test-kops 
+--region us-east-1 
+—create-bucket-   configuration
+LocationConstraint=us-east-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;*Regions outside of us-east-1 require the appropriate LocationConstraint to be specified in order to create the bucket in the desired region *&lt;/p&gt;
+&lt;h4 id=&#34;22-启动s3&#34;&gt;2.2 启动s3&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;aws s3api put-bucket-versioning --bucket test-kops  
+--versioning-configuration Status=Enabled
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;3创建cluster&#34;&gt;3.创建cluster&lt;/h3&gt;
+&lt;h4 id=&#34;31配置cluster&#34;&gt;3.1配置cluster&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;kops create cluster \
+--name=${KOPS_CLUSTER_NAME} \
+--zones=us-east-1a  \
+--master-size=&amp;quot;t2.micro&amp;quot; \
+--node-size=&amp;quot;t2.micro&amp;quot;  \
+--node-count=1  \
+--api-ssl-certificate “arn:aws:acm:us-east-1:xxxxxx&amp;quot; \
+--image=&amp;quot;xxxxx/k8s-micro&amp;quot; \
+--vpc=&amp;quot;vpc-xxxxxx&amp;quot; \
+--ssh-public-key=&amp;quot;~/.ssh/id_rsa.pub&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;此处用了acm证书的ARN&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;此处为方便之后登陆 先 用Linux AMI 2 创建实例（aws的目前只支持这个镜像），配置好deploy账户制作ami, 但cluster新启动的实例默认时不允许密码登陆，需要先用publickey方式登陆修改
+sudo vim /etc/ssh/sshd_config中
+PasswordAuthentication 为yes
+sudo systemctl  restart sshd&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;为了能在同一个vpc下安全访问，添加此参数，但kops目前有bug，需手动修改subnet&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;32编辑cluster配置&#34;&gt;3.2编辑cluster配置&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;kops edit cluster —name=${KOPS_CLUSTER_NAME}  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此处kops有计算子网地址出错的bug，要手动修改子网&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;subnets:
+- cidr: 172.31.32.0/19 为
+subnets:
+- cidr: 172.31.224.0/19
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;33-启动cluster&#34;&gt;3.3 启动cluster&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;kops update cluster --name ${KOPS_CLUSTER_NAME} --yes 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;34-删除cluster&#34;&gt;3.4 删除cluster&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;kops delete cluster --name ${KOPS_CLUSTER_NAME} --yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;4搭建dashboard以及heapster插件&#34;&gt;4.搭建dashboard以及heapster插件&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;https://www.cnblogs.com/RainingNight/p/deploying-k8s-dashboard-ui.html&lt;/a&gt;
+&lt;a href=&#34;&#34;&gt;https://docs.aws.amazon.com/zh_cn/eks/latest/userguide/dashboard-tutorial.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考上面文档， 目前用nodeport方式访问，而且要用https访问,
+在aws上node的实例上开放端口，目前没有配证书需要信任连接，用token访问&lt;/p&gt;
+&lt;p&gt;查token:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk &#39;{print $1}’)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;5部署&#34;&gt;5.部署&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;kubectl run test 
+--image=test.dkr.ecr.us-east-1.amazonaws.com/test:latest 
+--port=8080 
+--env=&amp;quot;ENV_CLUSTER=aws&amp;quot; 
+--replicas=1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;log目录挂载需手动添加一下配置（在dashboard， 或命令行皆可）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;spec中：
+&amp;quot;volumes&amp;quot;: [
+          {
+            &amp;quot;name&amp;quot;: &amp;quot;rocketlog&amp;quot;,
+            &amp;quot;hostPath&amp;quot;: {
+              &amp;quot;path&amp;quot;: &amp;quot;/rocketlog&amp;quot;,
+              &amp;quot;type&amp;quot;: &amp;quot;DirectoryOrCreate&amp;quot;
+            }
+          }
+        ],
+container中：
+&amp;quot;volumeMounts&amp;quot;: [
+              {
+                &amp;quot;name&amp;quot;: &amp;quot;rocketlog&amp;quot;,
+                &amp;quot;mountPath&amp;quot;: &amp;quot;/src/rocket/log&amp;quot;
+              }
+            ],
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;6访问pods内部&#34;&gt;6.访问pods内部&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;kubectl get nodes
+kubectl exec -it 节点名 bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;7暴露服务&#34;&gt;7.暴露服务&lt;/h3&gt;
+&lt;p&gt;有三种方式，这里选用LoadBalancer&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kubectl expose deployment/test --type=&amp;quot;LoadBalancer&amp;quot; --port 8080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在dashboard 修改 对应服务的port为443&lt;/p&gt;
+&lt;p&gt;然后在aws修改对应elb的listener为ssl 443 ，添加证书&lt;/p&gt;
+&lt;p&gt;绑定elb到xxx.com&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;aws的证书只能保护前面一个域，多了就出错&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;8建立rds&#34;&gt;8.建立rds&lt;/h3&gt;
+&lt;p&gt;rds数据库需要注意修改security group，默认好像限制ip，我目前改成只能node私有ip能访问&lt;/p&gt;
+&lt;h3 id=&#34;9部署流程&#34;&gt;9.部署流程&lt;/h3&gt;
+&lt;h4 id=&#34;91把docker镜像推送到ecr-并添加所需标签&#34;&gt;9.1把docker镜像推送到ECR， 并添加所需标签&lt;/h4&gt;
+&lt;p&gt;写了如下push脚本&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker rmi -f test &amp;amp;&amp;amp;\
+docker build -t test . &amp;amp;&amp;amp;\
+docker tag test test.dkr.ecr.us-east-1.amazonaws.com/rocket &amp;amp;&amp;amp;\
+COMMAND=`eval aws ecr get-login --no-include-email` &amp;amp;&amp;amp;\
+echo `eval $COMMAND` &amp;amp;&amp;amp;\
+docker push test.dkr.ecr.us-east-1.amazonaws.com/rocket &amp;amp;&amp;amp;\
+MANIFEST=$(aws ecr batch-get-image --repository-name test --image-ids imageTag=latest --query &#39;images[].imageManifest&#39; --output text)
+aws ecr put-image --repository-name test --image-tag $1 --image-manifest &amp;quot;$MANIFEST&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;运行时 push_to_ecr.sh xxx 添加标签&lt;/p&gt;
+&lt;h4 id=&#34;92-更新k8s部署的镜像&#34;&gt;9.2 更新k8s部署的镜像&lt;/h4&gt;
+&lt;p&gt;kubectl set image deployments/test test=test.dkr.ecr.us-east-1.amazonaws.com/test:xxx&lt;/p&gt;
+&lt;h3 id=&#34;10-docker证书重要&#34;&gt;10 docker证书（重要&lt;/h3&gt;
+&lt;p&gt;docker内访问https验证证书会出错docker file内添加如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;RUN apk update \
+        &amp;amp;&amp;amp; apk upgrade \
+        &amp;amp;&amp;amp; apk add --no-cache \
+        ca-certificates \
+        &amp;amp;&amp;amp; update-ca-certificates 2&amp;gt;/dev/null || true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;11-删除失败pod以及设置replic-set数量&#34;&gt;11 删除失败pod以及设置replic set数量&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;kubectl -n default delete pods --field-selector=status.phase=Failed
+
+revesionhistorylimit: 1
+&lt;/code&gt;&lt;/pre&gt;
+- https://blog.arboat.top/posts/kops/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>ELK &#43; Filebeats日志系统搭建与配置 爬坑指北</title>
+        <link>https://blog.arboat.top/posts/elk/</link>
+        <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/elk/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/elk/ -&lt;h1 id=&#34;elk--filebeats日志系统搭建与配置-爬坑指北&#34;&gt;&lt;strong&gt;ELK + Filebeats日志系统搭建与配置 爬坑指北&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;ELK是&lt;!-- raw HTML omitted --&gt;Elasticsearch, Logstash，Kibana&lt;!-- raw HTML omitted --&gt;的合称， 在此础上加上&lt;!-- raw HTML omitted --&gt;Filebeats&lt;!-- raw HTML omitted --&gt;向ELK发送数据
+几个软件最好用同样版本，这里用的是6.4.2&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;filebeats&#34;&gt;&lt;em&gt;&lt;strong&gt;Filebeats&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;filebeats&lt;/strong&gt;用来收集日志并发送到设置好的服务器&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;filebeats&lt;/strong&gt; 需要&lt;strong&gt;root&lt;/strong&gt;权限才能执行&lt;/p&gt;
+&lt;p&gt;配置 &lt;!-- raw HTML omitted --&gt;&lt;strong&gt;fields.yml&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;默认输出到服务器&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;5044&lt;/strong&gt;&lt;!-- raw HTML omitted --&gt;端口&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#========\ Filebeat inputs =========\
+
+filebeat.inputs:
+
+# Each - is an input. Most options can be set at the input level, so
+# you can use different inputs for various configurations.
+# Below are the input specific configurations.
+
+- type: log
+
+# Change to true to enable this input configuration.
+enabled: true
+
+# Paths that should be crawled and fetched. Glob based paths.
+paths:
+    - /home/XXX/log/*
+    #- c:\programdata\elasticsearch\logs\*
+#------------- Logstash output -------------
+output.logstash:
+# The Logstash hosts
+hosts: [&amp;quot;XXX.XX.XXX.XXX:5044&amp;quot;]  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;超时文件不监控&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      close_older: 12h
+      force_close_files: true 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;logstash&#34;&gt;&lt;em&gt;&lt;strong&gt;Logstash&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Logstash&lt;/strong&gt;用来监听filebeat发送到5044的日志，并进行匹配过滤，并发送到指定端口存入Elasticsearch&lt;/p&gt;
+&lt;p&gt;配置 &lt;!-- raw HTML omitted --&gt;**./config/logstash.yml** &lt;!-- raw HTML omitted --&gt;默认输出到服务器&lt;!-- raw HTML omitted --&gt;**9600-9700**&lt;!-- raw HTML omitted --&gt;端口，监听服务器&lt;!-- raw HTML omitted --&gt;**5044**&lt;!-- raw HTML omitted --&gt;端口&lt;/p&gt;
+&lt;p&gt;配置自定义 &lt;!-- raw HTML omitted --&gt;**./config/logsconf** &lt;!-- raw HTML omitted --&gt;定义匹配规则以及输出名字及地址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input {
+    beats {
+            port =&amp;gt; 5044
+    }
+}
+filter {
+    if &amp;quot;country=road&amp;quot; in [message] {
+        if &amp;quot;inMsg&amp;quot; in [message] {
+            grok {
+                match =&amp;gt; { &amp;quot;message&amp;quot; =&amp;gt; &amp;quot;\[%{DATA:others}\]\ %{DATA:others}\ %{TIMESTAMP_ISO8601:timestamp}\ %{DATA:others}\ %{DATA:others}\ %{DATA:others}\=%{NUMBER:requestID}\ %{DATA:others}\=%{NUMBER:messageID}\ %{DATA:others}\=%{DATA:sn}\ %{DATA:others}\=%{DATA:action}\ %{DATA:country}\ %{DATA:type}\=%{GREEDYDATA:Msg}&amp;quot; }
+                remove_field =&amp;gt; &amp;quot;others&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_type&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_id&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_score&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_index&amp;quot;
+                remove_field =&amp;gt; &amp;quot;input&amp;quot;
+                remove_field =&amp;gt; &amp;quot;beat&amp;quot;
+                remove_field =&amp;gt; &amp;quot;offset&amp;quot;
+                remove_field =&amp;gt; &amp;quot;message&amp;quot;
+                remove_field =&amp;gt; &amp;quot;tags&amp;quot;
+                remove_field =&amp;gt; &amp;quot;host&amp;quot;
+                remove_field =&amp;gt; &amp;quot;prospector&amp;quot;
+                remove_field =&amp;gt; &amp;quot;@version&amp;quot;
+            }
+            date {
+                match =&amp;gt; [&amp;quot;timestamp&amp;quot;, &amp;quot;ISO8601&amp;quot;]
+                target =&amp;gt; &amp;quot;timestamp&amp;quot;
+                }
+            mutate{
+                convert =&amp;gt; { &amp;quot;requestID&amp;quot; =&amp;gt; &amp;quot;integer&amp;quot; }
+            }
+
+        }
+        else {
+            if &amp;quot;outMsg&amp;quot; in [message] {
+                grok {
+                    match =&amp;gt; { &amp;quot;message&amp;quot; =&amp;gt; &amp;quot;\[%{DATA:others}\]\ %{DATA:others}\ %{TIMESTAMP_ISO8601:timestamp}\ %{DATA:others}\ %{DATA:others}\ %{DATA:others}\=%{NUMBER:requestID}\ %{DATA:others}\=%{DATA:sn}\ %{DATA:others}\=%{DATA:action}\ %{DATA:country}\ %{DATA:type}\=%{GREEDYDATA:Msg}&amp;quot; }
+                remove_field =&amp;gt; &amp;quot;others&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_type&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_id&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_score&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_index&amp;quot;
+                remove_field =&amp;gt; &amp;quot;input&amp;quot;
+                remove_field =&amp;gt; &amp;quot;beat&amp;quot;
+                remove_field =&amp;gt; &amp;quot;offset&amp;quot;
+                remove_field =&amp;gt; &amp;quot;message&amp;quot;
+                remove_field =&amp;gt; &amp;quot;tags&amp;quot;
+                remove_field =&amp;gt; &amp;quot;host&amp;quot;
+                remove_field =&amp;gt; &amp;quot;prospector&amp;quot;
+                remove_field =&amp;gt; &amp;quot;@version&amp;quot;
+                }
+                date {
+                    match =&amp;gt; [&amp;quot;timestamp&amp;quot;, &amp;quot;ISO8601&amp;quot;]
+                    target =&amp;gt; &amp;quot;timestamp&amp;quot;
+                }
+                mutate{
+                    convert =&amp;gt; { &amp;quot;requestID&amp;quot; =&amp;gt; &amp;quot;integer&amp;quot; }
+                }
+            }
+            else{
+                grok {
+                    match =&amp;gt; { &amp;quot;message&amp;quot; =&amp;gt; &amp;quot;\[%{DATA:others}\]\ %{DATA:others}\ %{TIMESTAMP_ISO8601:timestamp}\ %{DATA:others}\ %{DATA:others}\ %{DATA:others}\=%{NUMBER:requestID}\ %{DATA:others}\=%{DATA:sn}\ %{DATA:others}\=%{DATA:action}\ %{GREEDYDATA:country}&amp;quot; }
+                remove_field =&amp;gt; &amp;quot;others&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_type&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_id&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_score&amp;quot;
+                remove_field =&amp;gt; &amp;quot;_index&amp;quot;
+                remove_field =&amp;gt; &amp;quot;input&amp;quot;
+                remove_field =&amp;gt; &amp;quot;beat&amp;quot;
+                remove_field =&amp;gt; &amp;quot;offset&amp;quot;
+                remove_field =&amp;gt; &amp;quot;message&amp;quot;
+                remove_field =&amp;gt; &amp;quot;tags&amp;quot;
+                remove_field =&amp;gt; &amp;quot;host&amp;quot;
+                remove_field =&amp;gt; &amp;quot;prospector&amp;quot;
+                remove_field =&amp;gt; &amp;quot;@version&amp;quot;
+                }
+                date {
+                    match =&amp;gt; [&amp;quot;timestamp&amp;quot;, &amp;quot;ISO8601&amp;quot;]
+                    target =&amp;gt; &amp;quot;timestamp&amp;quot;
+                }
+                mutate{
+                    convert =&amp;gt; { &amp;quot;requestID&amp;quot; =&amp;gt; &amp;quot;integer&amp;quot; }
+                }
+
+            }
+        }
+    }
+    else{
+    grok {
+            match =&amp;gt; { &amp;quot;message&amp;quot; =&amp;gt; &amp;quot;%{COMBINEDAPACHELOG}&amp;quot; }
+            remove_field =&amp;gt; &amp;quot;input&amp;quot;
+            remove_field =&amp;gt; &amp;quot;beat&amp;quot;
+            remove_field =&amp;gt; &amp;quot;offset&amp;quot;
+            remove_field =&amp;gt; &amp;quot;message&amp;quot;
+            remove_field =&amp;gt; &amp;quot;tags&amp;quot;
+            remove_field =&amp;gt; &amp;quot;host&amp;quot;
+            remove_field =&amp;gt; &amp;quot;prospector&amp;quot;
+            remove_field =&amp;gt; &amp;quot;@version&amp;quot;
+            }
+    }
+}
+output {
+    if &amp;quot;xxx/360/&amp;quot; in [source] {
+        elasticsearch {
+            hosts =&amp;gt; [ &amp;quot;localhost:9200&amp;quot;  ]
+            index =&amp;gt; &amp;quot;xxx_logs-%{+YYYY.MM.dd}&amp;quot;
+        }
+    }
+    else if &amp;quot;xxx/logs&amp;quot; in [source]{
+        elasticsearch {
+            hosts =&amp;gt; [ &amp;quot;localhost:9200&amp;quot;  ]
+            index =&amp;gt; &amp;quot;xxx-%{+YYYY.MM.dd}&amp;quot;
+        }
+    }
+    else if &amp;quot;xxx/log&amp;quot; in [source]{
+        elasticsearch {
+            hosts =&amp;gt; [ &amp;quot;localhost:9200&amp;quot;  ]
+            index =&amp;gt; &amp;quot;xxx-%{+YYYY.MM.dd}&amp;quot;
+        }
+    }
+    else{
+        elasticsearch {
+            hosts =&amp;gt; [ &amp;quot;localhost:9200&amp;quot;  ]
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;输出的名字要小写字母&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;匹配规则比较复杂&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;elasticsearch&#34;&gt;&lt;em&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Elasticsearch&lt;/p&gt;
+&lt;p&gt;配置 &lt;!-- raw HTML omitted --&gt;**./config/elasticsearch.yml** &lt;!-- raw HTML omitted --&gt;默认输出到服务器&lt;!-- raw HTML omitted --&gt;**9200**&lt;!-- raw HTML omitted --&gt;端口，监听服务器&lt;!-- raw HTML omitted --&gt;**9600**&lt;!-- raw HTML omitted --&gt;端口&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# ---------------------------------- Network -----------------------------------
+#
+# Set the bind address to a specific IP (IPv4 or IPv6):
+#
+network.host: 0.0.0.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;若日志文件较大，应部署在大磁盘上，否则出现磁盘空间不足时，Elasticsearch服务会故障&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;kibana&#34;&gt;&lt;em&gt;&lt;strong&gt;Kibana&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;配置 &lt;!-- raw HTML omitted --&gt;**./config/kibana.yml** &lt;!-- raw HTML omitted --&gt;默认输出到服务器&lt;!-- raw HTML omitted --&gt;**5601**&lt;!-- raw HTML omitted --&gt;端口&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;server.host: &amp;quot;0.0.0.0&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;直接查询elasticsearch&#34;&gt;&lt;em&gt;&lt;strong&gt;直接查询Elasticsearch&lt;/strong&gt;&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;ELK服务器需开放5601 5044 端口，若要直接访问Elasticsearch，还需打开9200&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#string：
+s1 := &amp;quot;{\&amp;quot;query\&amp;quot;: {\&amp;quot;bool\&amp;quot;: {\&amp;quot;filter\&amp;quot;: {\&amp;quot;bool\&amp;quot;: {\&amp;quot;must\&amp;quot;: [{\&amp;quot;range\&amp;quot;: {\&amp;quot;timestamp\&amp;quot;: {\&amp;quot;gte\&amp;quot;: \&amp;quot;&amp;quot;
+    s2 := gte
+    s3 := &amp;quot;\&amp;quot;,\&amp;quot;lte\&amp;quot;: \&amp;quot;&amp;quot;
+    s4 := lte
+    s5 := &amp;quot;\&amp;quot;} } } ,{ \&amp;quot;match\&amp;quot;: { \&amp;quot;country\&amp;quot;:\&amp;quot;123\&amp;quot; } },{\&amp;quot;match\&amp;quot;: { \&amp;quot;sn\&amp;quot;: \&amp;quot;&amp;quot;
+    s6 := sn
+    s7 := &amp;quot;\&amp;quot; } }],\&amp;quot;should\&amp;quot;:[{ \&amp;quot;term\&amp;quot;: { \&amp;quot;action\&amp;quot;: \&amp;quot;connect\&amp;quot; } },{ \&amp;quot;term\&amp;quot;: { \&amp;quot;action\&amp;quot;: \&amp;quot;disconnect\&amp;quot; } }] } } } },\&amp;quot;_source\&amp;quot;: [\&amp;quot;action\&amp;quot;,\&amp;quot;requestID\&amp;quot;, \&amp;quot;sn\&amp;quot;, \&amp;quot;timestamp\&amp;quot;, \&amp;quot;messageID\&amp;quot;, \&amp;quot;type\&amp;quot;, \&amp;quot;Msg\&amp;quot;],\&amp;quot;size\&amp;quot;:10000}&amp;quot;
+    jsonStr := []byte(s1 + s2 + s3 + s4 + s5 + s6 + s7)
+
+#postman：
+
+   http://127.0.0.1:9200/xxx*/_search
+    {
+    &amp;quot;query&amp;quot;: {
+    &amp;quot;bool&amp;quot;: {
+    &amp;quot;must&amp;quot;: [
+        {&amp;quot;range&amp;quot;: {
+            &amp;quot;timestamp&amp;quot;: {
+                &amp;quot;gte&amp;quot;: &amp;quot;2018-11-06T06:27:12.262Z&amp;quot;,
+                &amp;quot;lte&amp;quot;: &amp;quot;2018-11-07T06:27:12.262Z&amp;quot;
+                }
+                } } ,
+        { &amp;quot;match&amp;quot;: { &amp;quot;country&amp;quot;: &amp;quot;123&amp;quot; } },
+        { &amp;quot;match&amp;quot;: { &amp;quot;sn&amp;quot;: &amp;quot;123456&amp;quot; } }
+    ]
+    }
+},
+&amp;quot;_source&amp;quot;: [&amp;quot;requestID&amp;quot;, &amp;quot;sn&amp;quot;, &amp;quot;timestamp&amp;quot;, &amp;quot;messageID&amp;quot;, &amp;quot;type&amp;quot;, &amp;quot;Msg&amp;quot;],
+
+&amp;quot;size&amp;quot;:1000
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;一次查询默认10，最大可设置成10000&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;查询性能优化&#34;&gt;&lt;strong&gt;查询性能优化&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;清除缓存：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -XPOST &amp;quot;http://121.0.0.1:9200/_cache/clear&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;删除7天前日志脚本：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#/bin/bash
+#指定日期(7天前)
+DATA=`date -d &amp;quot;1 week ago&amp;quot; +%Y.%m.%d`
+#当前日期
+time=`date`
+#删除7天前的日志curl -XDELETE http://127.0.0.1:9200/*-${DATA}
+if [ $? -eq 0 ];then
+echo $time&amp;quot;--&amp;gt;del $DATA log success..&amp;quot; &amp;gt;&amp;gt; /tmp/es-index-clear.log
+else
+echo $time&amp;quot;--&amp;gt;del $DATA log fail..&amp;quot; &amp;gt;&amp;gt; /tmp/es-index-clear.log
+fi
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;其他：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -XGET &#39;http://xxx.xxx.xxx.xxx:9200/_cat/indices/?v&#39;
+&lt;/code&gt;&lt;/pre&gt;
+- https://blog.arboat.top/posts/elk/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>mysql 事务和锁整理</title>
+        <link>https://blog.arboat.top/posts/mysql-transaction/</link>
+        <pubDate>Fri, 01 May 2020 00:00:03 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/mysql-transaction/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/mysql-transaction/ -&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;事务： begin，start transaction 可以加修饰： read only / read write / with consistent snapshot&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;脏读(发生回滚)、不可重复读（读过程被修改不一致）、幻读（新加了一条）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;隔离级别&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;              脏读， 不可重复读， 幻影写
+  未提交读       
+  已提交读      x       
+  可重复读      x       x        (innoDB x)
+  串行化        x      x         x          
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;隔离级别越高，事务的并发度就越低。唯一的区别就在于，InnoDB 在可重复读（REPEATABLE READ）的级别就解决了幻读的问题。这也是InnoDB使用可重复读 作为事务默认隔离级别的原因&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;读-读&lt;/code&gt;即并发事务同时访问同一行数据记录。由于两个事务都进行只读操作，不会对记录造成任何影响，因此并发读完全允许。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;写-写&lt;/code&gt;即并发事务同时修改同一行数据记录。这种情况下可能导致&lt;code&gt;脏写&lt;/code&gt;问题，这是任何情况下都不允许发生的，因此只能通过&lt;code&gt;加锁&lt;/code&gt;实现，也就是当一个事务需要对某行记录进行修改时，首先会先给这条记录加锁，如果加锁成功则继续执行，否则就排队等待，事务执行完成或回滚会自动释放锁。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;读-写&lt;/code&gt;即一个事务进行读取操作，另一个进行写入操作。这种情况下可能会产生ww最好的方案是&lt;strong&gt;读操作利用多版本并发控制（&lt;code&gt;MVCC&lt;/code&gt;），写操作进行加锁&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按锁作用的数据范围进行分类的话，锁可以分为&lt;code&gt;行级锁&lt;/code&gt;和&lt;code&gt;表级锁&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;行级锁&lt;/code&gt;：作用在数据行上，锁的粒度比较小。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;表级锁&lt;/code&gt;：作用在整张数据表上，锁的粒度比较大。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;为了实现&lt;code&gt;读-读&lt;/code&gt;之间不受影响，并且&lt;code&gt;写-写&lt;/code&gt;、&lt;code&gt;读-写&lt;/code&gt;之间能够相互阻塞，&lt;code&gt;Mysql&lt;/code&gt;使用了&lt;code&gt;读写锁&lt;/code&gt;的思路进行实现，具体来说就是分为了&lt;code&gt;共享锁&lt;/code&gt;和&lt;code&gt;排它锁&lt;/code&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;共享锁(Shared Locks)&lt;/code&gt;：简称&lt;code&gt;S锁&lt;/code&gt;，在事务要读取一条记录时，需要先获取该记录的&lt;code&gt;S锁&lt;/code&gt;。&lt;code&gt;S锁&lt;/code&gt;可以在同一时刻被多个事务同时持有。我们可以用&lt;code&gt;select ...... lock in share mode;&lt;/code&gt;的方式手工加上一把&lt;code&gt;S锁&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;排他锁(Exclusive Locks)&lt;/code&gt;：简称&lt;code&gt;X锁&lt;/code&gt;，在事务要改动一条记录时，需要先获取该记录的&lt;code&gt;X锁&lt;/code&gt;。&lt;code&gt;X锁&lt;/code&gt;在同一时刻最多只能被一个事务持有。&lt;code&gt;X锁&lt;/code&gt;的加锁方式有两种，第一种是自动加锁，在对数据进行增删改的时候，都会默认加上一个&lt;code&gt;X锁&lt;/code&gt;。还有一种是手工加锁，我们用一个&lt;code&gt;FOR UPDATE&lt;/code&gt;给一行数据加上一个&lt;code&gt;X锁&lt;/code&gt;【行锁】&lt;/li&gt;
+&lt;li&gt;意向锁可以认为是S锁和X锁在数据表上的标识，通过意向锁可以快速判断表中是否有记录被上锁，从而避免通过遍历的方式来查看表中有没有记录被上锁，提升加锁效率.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;还需要注意的一点是，如果一个事务已经持有了某行记录的S锁，另一个事务是无法为这行记录加上X锁的，反之亦然。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;InnoDB的行锁，是通过锁住索引来实现的，如果加锁查询的时候没有使用过索引，会将整个聚簇索引都锁住，相当于锁表了（记录锁(Record Locks)、间隙锁(Gap Locks)和临键锁(Next-Key Locks)）InnoDB这种行锁实现特点意味者：只有通过索引条件检索数据，InnoDB才会使用行级锁，否则，InnoDB将使用表锁！&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;什么时候使用表锁&#34;&gt;什么时候使用表锁&lt;/h1&gt;
+&lt;p&gt;对于InnoDB表，在绝大部分情况下都应该使用行级锁，因为事务和行锁往往是我们之所以选择InnoDB表的理由。但在个别特殊事务中，也可以考虑使用表级锁。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一种情况是：事务需要更新大部分或全部数据，表又比较大，如果使用默认的行锁，不仅这个事务执行效率低，而且可能造成其他事务长时间锁等待和锁冲突，这种情况下可以考虑使用表锁来提高该事务的执行速度。&lt;/li&gt;
+&lt;li&gt;第二种情况是：事务涉及多个表，比较复杂，很可能引起死锁，造成大量事务回滚。这种情况也可以考虑一次性锁定事务涉及的表，从而避免死锁、减少数据库因事务回滚带来的开销。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当然，应用中这两种事务不能太多，否则，就应该考虑使用ＭyISAＭ表。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-表锁：开销小，加锁快，不会出现死锁，锁定粒度大，发生锁冲突概率高，并发度低&lt;/li&gt;
+&lt;li&gt;-行锁：开销大，加锁慢，会出现死锁，锁定粒度小，发生锁冲突概率低，并发度高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;表锁更适用于以查询为主，只有少量按索引条件更新数据的应用；行锁更适用于有大量按索引条件并发更新少量不同数据，同时又有并发查询的应用&lt;/li&gt;
+&lt;/ul&gt;
+- https://blog.arboat.top/posts/mysql-transaction/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>mysql 索引整理</title>
+        <link>https://blog.arboat.top/posts/mysql-index/</link>
+        <pubDate>Fri, 01 May 2020 00:00:02 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/mysql-index/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/mysql-index/ -&lt;h1 id=&#34;基础&#34;&gt;基础&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;客户端和服务端用tcp通信，默认端口3306&lt;/li&gt;
+&lt;li&gt;服务端： 连接管理， 解析和优化，存储引擎&lt;/li&gt;
+&lt;li&gt;查询缓存： 更新表后实效， 查询字符有区别，包含系统或一些自建函数回失效（now函数）&lt;/li&gt;
+&lt;li&gt;存储引擎： InnoDB(支持外键、行锁、事务), MyISAM, Memory&lt;/li&gt;
+&lt;li&gt;InnoDB: 划分页， 用来磁盘和内存交互， 一般16kb&lt;/li&gt;
+&lt;li&gt;InnoDB 分为7个页， 页记录串联单向链表， 生成页目录，主键用二分查找槽，再遍历&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;索引&#34;&gt;索引&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;索引： 页分裂 ；record_type : 0:普通；1:索引目录；2：最小值；3: 最大值  ，索引即是数据&lt;/li&gt;
+&lt;li&gt;B+叶子节点存储所有记录， 一般不超过4层&lt;/li&gt;
+&lt;li&gt;聚簇索引：主键的索引&lt;/li&gt;
+&lt;li&gt;二级索引：用其他和主键一起，先找出主键，在找聚簇索引&lt;/li&gt;
+&lt;li&gt;联合索引： 多个其他和主键一起&lt;/li&gt;
+&lt;li&gt;一个b+索引创建了就不会移动位置&lt;/li&gt;
+&lt;li&gt;MyISAM： 索引和数据分开存储， 相当都是二级索引&lt;/li&gt;
+&lt;li&gt;索引的代价： 以空间换时间&lt;/li&gt;
+&lt;li&gt;全值匹配： 正好所有索引, where 顺序无影响&lt;/li&gt;
+&lt;li&gt;匹配左边的列，匹配列前缀，&lt;/li&gt;
+&lt;li&gt;联合索引最左边，或精确的下一个可以用到b+索引&lt;/li&gt;
+&lt;li&gt;排序不能用索引及情况： 1.联合索引排序列asc和desc一致 2.不在同一索引 3。 where中出现非索引；4不能用复杂表达式&lt;/li&gt;
+&lt;li&gt;需要回表的数据越多，二级索引效率越低&lt;/li&gt;
+&lt;li&gt;建立索引规则：1.只为搜索排序分组的列建索引。2. 只为基数大的建立索引；3.索引列类型尽量小；4.字符串鼓励用前缀（但不支持排序）&lt;/li&gt;
+&lt;li&gt;主键 auto_increment; 避免重复&lt;/li&gt;
+&lt;/ul&gt;
+- https://blog.arboat.top/posts/mysql-index/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Nginx log 每日切分脚本</title>
+        <link>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</link>
+        <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/ngxin-log-daily-rotate/ -&lt;h1 id=&#34;nginx-log-每日切分脚本&#34;&gt;Nginx log 每日切分脚本&lt;/h1&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+LOG_HOME=&amp;quot;/xxx/logs/&amp;quot;
+log_file_commaccess=access.log
+log_file_commerror=error.log
+pid=/xxx/xxx/nginx.pid
+yestime=`date -d &#39;-1 day&#39; +%Y%m%d`
+mv ${LOG_HOME}/${log_file_commaccess}   ${LOG_HOME}/${log_file_commaccess}.${yestime}
+mv ${LOG_HOME}/${log_file_commerror}    ${LOG_HOME}/${log_file_commerror}.${yestime}
+sudo kill -USR1 `cat $pid` // 重启log信号量
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;添加crontab -e&lt;/p&gt;
+- https://blog.arboat.top/posts/ngxin-log-daily-rotate/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>redis note</title>
+        <link>https://blog.arboat.top/posts/redis/</link>
+        <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/redis/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/redis/ -&lt;h1 id=&#34;特点及基本结构&#34;&gt;特点及基本结构&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;高性能， 高可靠， 高可扩展&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;五种主要结构&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  string : int, raw, embstr
+  list: ziplist + linkedlist
+  hash: ziplist + hashtable
+  zset: ziplist + skiplist
+  set:  hashtable + inset
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;redis 单线程读写指对网络io和数据读写用一个线程，避免多线程并发的控制问题，多路复用模型&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;备份有rdb和aof两种:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;aof 三种写回机制always ，evevrysec，no ，日志重写不会阻塞，// 恢复慢&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rdb  snapshot 恢复快        bgsave copy-on-write（fork子进程），增量快照   //数据丢失&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主从同步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;哨兵机制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;string开销大&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;redis消息队列： 消息保序，处理重复消息，保证消息可靠性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;加锁和原子操作， 原子操作有限， 分布式锁： 单节点用一个key来当锁， redlock&lt;/li&gt;
+&lt;li&gt;事务： multi exec ，discard watch ， 能保证一致性和隔离性， 不能保证持久性， 命令语法没问题时可以保证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;一致性-雪崩击穿穿透&#34;&gt;一致性， 雪崩，击穿，穿透&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一致性:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因：缓存或数据库失败&lt;/li&gt;
+&lt;li&gt;解决：重试机制（kafka消息队列）； 大量并发， 先删缓存再更新数据库（延迟双删），先更新再删缓存（读少影响小）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;雪崩：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因： 大量数据同时失效&lt;/li&gt;
+&lt;li&gt;解决： 设置随机的时间差； 服务降级；&lt;/li&gt;
+&lt;li&gt;原因： 实例故障&lt;/li&gt;
+&lt;li&gt;解决： 服务熔断，服务限流，提前预防（主从结构&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;击穿：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因：热点数据频繁访问&lt;/li&gt;
+&lt;li&gt;解决：不设置过期时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;穿透：频繁访问数据库中空不存在的值&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因：恶意攻击， 系统误删数据&lt;/li&gt;
+&lt;li&gt;解决：1。设置空值缺省值，2.布隆过滤器 3. 对请求检测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lru解决缓存实效， lfu解决缓存访问频次&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+- https://blog.arboat.top/posts/redis/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Gin note</title>
+        <link>https://blog.arboat.top/posts/gin/</link>
+        <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/gin/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/gin/ -&lt;h1 id=&#34;gin&#34;&gt;Gin&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; router := gin.Default()
+ router.Run()
+ // router.Run(&amp;quot;:3000&amp;quot;) for a hard coded port
+	
+ //net/http
+ s := &amp;amp;http.Server{
+ Addr:           confs.FlagSericePort,
+ Handler:        router,
+ ReadTimeout:    10 * time.Second,
+ WriteTimeout:   10 * time.Second,
+ MaxHeaderBytes: 1 &amp;lt;&amp;lt; 20,
+ }
+ s.ListenAndServe()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;/user/:name/*action&amp;rdquo;                                      &lt;br&gt;
+name := c.Param(&amp;ldquo;name&amp;rdquo;)       &lt;br&gt;
+action := c.Param(&amp;ldquo;action&amp;rdquo;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;firstname := c.DefaultQuery(&amp;ldquo;firstname&amp;rdquo;, &amp;ldquo;Guest&amp;rdquo;)                               &lt;br&gt;
+lastname :=c.Query(&amp;ldquo;lastname&amp;rdquo;)                                   &lt;br&gt;
+// shortcut for c.Request.URL.Query().Get(&amp;ldquo;lastname&amp;rdquo;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;message := c.PostForm(&amp;ldquo;message&amp;rdquo;)          &lt;br&gt;
+nick := c.DefaultPostForm(&amp;ldquo;nick&amp;rdquo;, &amp;ldquo;anonymous&amp;rdquo;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;binding:&amp;ldquo;required&amp;rdquo; / binding:&amp;quot;-&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using BasicAuth() middleware&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run multiple service using Gin&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Custom HTTP configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Graceful restart or stop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The normal methods for binding request body consumes c.Request.Body and they cannot be called multiple times.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OTHER PACKAGE&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      appleboy/gin-jwt
+      Casbin&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+- https://blog.arboat.top/posts/gin/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>gRPC note</title>
+        <link>https://blog.arboat.top/posts/grpc/</link>
+        <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.arboat.top/posts/grpc/</guid>
+        <description>ArBlog https://blog.arboat.top/posts/grpc/ -&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;By default, gRPC uses protocol buffers as the Interface Definition Language (IDL) for describing both the service interface and the structure of the payload messages. It is possible to use other alternatives if desired.一共四种模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;单项 RPC，即客户端发送一个请求给服务端，从服务端获取一个应答，就像一次普通的函数调用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;服务端流式 RPC，即客户端发送一个请求给服务端，可获取一个数据流用来读取一系列消息。客户端从返回的数据流里一直读取直到没有更多消息为止。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;客户端流式 RPC，即客户端用提供的一个数据流写入并发送一系列消息给服务端。一旦客户端完成消息写入，就等待服务端读取这些消息并返回应答。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双向流式 RPC，即两边都可以分别通过一个读写数据流来发送一系列消息。这两个数据流操作是相互独立的，所以客户端和服务端能按其希望的任意顺序读写，例如：服务端可以在写应答前等待所有的客户端消息，或者它可以先读一个消息再写一个消息，或者是读写相结合的其他方式。每个数据流里消息的顺序会被保持。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;同步 RPC 调用一直会阻塞直到从服务端获得一个应答，这与 RPC 希望的抽象最为接近。另一方面网络内部是异步的，并且在许多场景下能够在不阻塞当前线程的情况下启动 RPC 是非常有用的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无论客户端还是服务端均可以再任何时间取消一个 RPC 。一个取消会立即终止 RPC 这样可以避免更多操作被执行。它不是一个&amp;quot;撤销&amp;rdquo;， 在取消前已经完成的不会被回滚。当然，通过同步调用的 RPC 不能被取消，因为直到 RPC 结束前，程序控制权还没有交还给应用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gRP 集成 SSL/TLS 并对服务端授权所使用的 SSL/TLS 进行了改良，对客户端和服务端交换的所有数据进行了加密。对客户端来讲提供了可选的机制提供凭证来获得共同的授权。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;好处： 屏蔽远程和本地调用区别， 屏蔽网络通信细节&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;建立在tcp基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缺点： 浏览器大多不支持， Protobuf二进制不可直接读&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有点： 基于http2效率高（头部压缩， 多路复用消除队头阻塞），规范， 流式处理（长链接），截止时间/超时和取消（控制）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+- https://blog.arboat.top/posts/grpc/ - </description>
+        </item>
+    
+    
+  </channel>
+</rss> 
