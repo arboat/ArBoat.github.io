@@ -6,7 +6,6 @@
     <description>Recent content in redis on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:01 +0000</lastBuildDate>
     
 	<atom:link href="https://arboat.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +13,7 @@
     <item>
       <title>redis note</title>
       <link>https://arboat.github.io/posts/redis/</link>
-      <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://arboat.github.io/posts/redis/</guid>
       <description>特点及基本结构   高性能， 高可靠， 高可扩展

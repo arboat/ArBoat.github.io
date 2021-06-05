@@ -6,25 +6,14 @@
     <description>Recent content in aws on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 00:00:01 +0800</lastBuildDate>
     
 	<atom:link href="https://arboat.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>项目中用过的aws服务</title>
-      <link>https://arboat.github.io/posts/aws-services/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:01 +0800</pubDate>
-      
-      <guid>https://arboat.github.io/posts/aws-services/</guid>
-      <description>Compute EC2 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
-ELB Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.</description>
-    </item>
-    
-    <item>
       <title>利用kops在AWS上搭建k8s</title>
       <link>https://arboat.github.io/posts/kops/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://arboat.github.io/posts/kops/</guid>
       <description>利用kops在AWS上搭建k8s 工具 kops k8s 官方免费工具，支持aws， 谷歌云等，目前貌似不是特别支持阿里云,（aws的eks $150/month, 谷歌云，阿里云免费提供。）
@@ -33,6 +22,16 @@ awscli aws客户端
 kubectl k8s客户端
 步骤 1.两个常用值设为环境变量 export KOPS_CLUSTER_NAME=test.test.com export KOPS_STATE_STORE=s3://test-kops  2.创建以及启动s3 bucket 2.1 创建s3 aws s3api create-bucket --bucket test-kops --region us-east-1 —create-bucket- configuration LocationConstraint=us-east-1  *Regions outside of us-east-1 require the appropriate LocationConstraint to be specified in order to create the bucket in the desired region *
 2.2 启动s3 aws s3api put-bucket-versioning --bucket test-kops --versioning-configuration Status=Enabled  3.</description>
+    </item>
+    
+    <item>
+      <title>项目中用过的aws服务</title>
+      <link>https://arboat.github.io/posts/aws-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arboat.github.io/posts/aws-services/</guid>
+      <description>Compute EC2 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
+ELB Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.</description>
     </item>
     
   </channel>
