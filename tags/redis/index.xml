@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>redis on ArBlog</title>
-    <link>https://blog.arboat.top/tags/redis/</link>
+    <link>https://arboat.github.io/tags/redis/</link>
     <description>Recent content in redis on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:01 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.arboat.top/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arboat.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>redis note</title>
-      <link>https://blog.arboat.top/posts/redis/</link>
+      <link>https://arboat.github.io/posts/redis/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/redis/</guid>
+      <guid>https://arboat.github.io/posts/redis/</guid>
       <description>特点及基本结构   高性能， 高可靠， 高可扩展
   五种主要结构
  string : int, raw, embstr list: ziplist + linkedlist hash: ziplist + hashtable zset: ziplist + skiplist set: hashtable + inset    redis 单线程读写指对网络io和数据读写用一个线程，避免多线程并发的控制问题，多路复用模型

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>log on ArBlog</title>
-    <link>https://blog.arboat.top/tags/log/</link>
+    <link>https://arboat.github.io/tags/log/</link>
     <description>Recent content in log on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 01 May 2020 00:00:01 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.arboat.top/tags/log/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arboat.github.io/tags/log/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nginx log 每日切分脚本</title>
-      <link>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</link>
+      <link>https://arboat.github.io/posts/ngxin-log-daily-rotate/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</guid>
+      <guid>https://arboat.github.io/posts/ngxin-log-daily-rotate/</guid>
       <description>Nginx log 每日切分脚本 #!/bin/bash LOG_HOME=&amp;quot;/xxx/logs/&amp;quot; log_file_commaccess=access.log log_file_commerror=error.log pid=/xxx/xxx/nginx.pid yestime=`date -d &#39;-1 day&#39; +%Y%m%d` mv ${LOG_HOME}/${log_file_commaccess} ${LOG_HOME}/${log_file_commaccess}.${yestime} mv ${LOG_HOME}/${log_file_commerror} ${LOG_HOME}/${log_file_commerror}.${yestime} sudo kill -USR1 `cat $pid` // 重启log信号量  添加crontab -e</description>
     </item>
     

@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ArBlog</title>
-    <link>https://blog.arboat.top/tags/</link>
+    <link>https://arboat.github.io/tags/</link>
     <description>Recent content in Tags on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Feb 2021 00:00:01 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.arboat.top/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arboat.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>aws</title>
-      <link>https://blog.arboat.top/tags/aws/</link>
+      <link>https://arboat.github.io/tags/aws/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:01 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/aws/</guid>
+      <guid>https://arboat.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://blog.arboat.top/tags/docker/</link>
+      <link>https://arboat.github.io/tags/docker/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/docker/</guid>
+      <guid>https://arboat.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>https://blog.arboat.top/tags/k8s/</link>
+      <link>https://arboat.github.io/tags/k8s/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/k8s/</guid>
+      <guid>https://arboat.github.io/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticsearch</title>
-      <link>https://blog.arboat.top/tags/elasticsearch/</link>
+      <link>https://arboat.github.io/tags/elasticsearch/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/elasticsearch/</guid>
+      <guid>https://arboat.github.io/tags/elasticsearch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kibana</title>
-      <link>https://blog.arboat.top/tags/kibana/</link>
+      <link>https://arboat.github.io/tags/kibana/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/kibana/</guid>
+      <guid>https://arboat.github.io/tags/kibana/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logstash</title>
-      <link>https://blog.arboat.top/tags/logstash/</link>
+      <link>https://arboat.github.io/tags/logstash/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/tags/logstash/</guid>
+      <guid>https://arboat.github.io/tags/logstash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>https://blog.arboat.top/tags/mysql/</link>
+      <link>https://arboat.github.io/tags/mysql/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/mysql/</guid>
+      <guid>https://arboat.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>log</title>
-      <link>https://blog.arboat.top/tags/log/</link>
+      <link>https://arboat.github.io/tags/log/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/log/</guid>
+      <guid>https://arboat.github.io/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nginx</title>
-      <link>https://blog.arboat.top/tags/nginx/</link>
+      <link>https://arboat.github.io/tags/nginx/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/nginx/</guid>
+      <guid>https://arboat.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>redis</title>
-      <link>https://blog.arboat.top/tags/redis/</link>
+      <link>https://arboat.github.io/tags/redis/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/redis/</guid>
+      <guid>https://arboat.github.io/tags/redis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gin</title>
-      <link>https://blog.arboat.top/tags/gin/</link>
+      <link>https://arboat.github.io/tags/gin/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/gin/</guid>
+      <guid>https://arboat.github.io/tags/gin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gRPC</title>
-      <link>https://blog.arboat.top/tags/grpc/</link>
+      <link>https://arboat.github.io/tags/grpc/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/tags/grpc/</guid>
+      <guid>https://arboat.github.io/tags/grpc/</guid>
       <description></description>
     </item>
     

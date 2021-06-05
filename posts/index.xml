@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ArBlog</title>
-    <link>https://blog.arboat.top/posts/</link>
+    <link>https://arboat.github.io/posts/</link>
     <description>Recent content in Posts on ArBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Feb 2021 00:00:01 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.arboat.top/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://arboat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>项目中用过的aws服务</title>
-      <link>https://blog.arboat.top/posts/aws-services/</link>
+      <link>https://arboat.github.io/posts/aws-services/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:01 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/posts/aws-services/</guid>
+      <guid>https://arboat.github.io/posts/aws-services/</guid>
       <description>Compute EC2 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
 ELB Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, and Lambda functions.</description>
     </item>
     
     <item>
       <title>利用kops在AWS上搭建k8s</title>
-      <link>https://blog.arboat.top/posts/kops/</link>
+      <link>https://arboat.github.io/posts/kops/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:01 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/posts/kops/</guid>
+      <guid>https://arboat.github.io/posts/kops/</guid>
       <description>利用kops在AWS上搭建k8s 工具 kops k8s 官方免费工具，支持aws， 谷歌云等，目前貌似不是特别支持阿里云,（aws的eks $150/month, 谷歌云，阿里云免费提供。）
 dashboard k8s 官方免费工具，配合heapster插件进行监控， 可查看日志，管理部署，容器,服务的编辑和伸缩等。
 awscli aws客户端
@@ -37,10 +37,10 @@ kubectl k8s客户端
     
     <item>
       <title>ELK &#43; Filebeats日志系统搭建与配置 爬坑指北</title>
-      <link>https://blog.arboat.top/posts/elk/</link>
+      <link>https://arboat.github.io/posts/elk/</link>
       <pubDate>Wed, 01 Jul 2020 00:00:00 +0800</pubDate>
       
-      <guid>https://blog.arboat.top/posts/elk/</guid>
+      <guid>https://arboat.github.io/posts/elk/</guid>
       <description>ELK + Filebeats日志系统搭建与配置 爬坑指北 ELK是Elasticsearch, Logstash，Kibana的合称， 在此础上加上Filebeats向ELK发送数据 几个软件最好用同样版本，这里用的是6.4.2
  Filebeats filebeats用来收集日志并发送到设置好的服务器
 filebeats 需要root权限才能执行
@@ -50,10 +50,10 @@ filebeats 需要root权限才能执行
     
     <item>
       <title>mysql 事务和锁整理</title>
-      <link>https://blog.arboat.top/posts/mysql-transaction/</link>
+      <link>https://arboat.github.io/posts/mysql-transaction/</link>
       <pubDate>Fri, 01 May 2020 00:00:03 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/mysql-transaction/</guid>
+      <guid>https://arboat.github.io/posts/mysql-transaction/</guid>
       <description>事务： begin，start transaction 可以加修饰： read only / read write / with consistent snapshot
   脏读(发生回滚)、不可重复读（读过程被修改不一致）、幻读（新加了一条）。
   隔离级别
@@ -68,28 +68,28 @@ filebeats 需要root权限才能执行
     
     <item>
       <title>mysql 索引整理</title>
-      <link>https://blog.arboat.top/posts/mysql-index/</link>
+      <link>https://arboat.github.io/posts/mysql-index/</link>
       <pubDate>Fri, 01 May 2020 00:00:02 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/mysql-index/</guid>
+      <guid>https://arboat.github.io/posts/mysql-index/</guid>
       <description>基础  客户端和服务端用tcp通信，默认端口3306 服务端： 连接管理， 解析和优化，存储引擎 查询缓存： 更新表后实效， 查询字符有区别，包含系统或一些自建函数回失效（now函数） 存储引擎： InnoDB(支持外键、行锁、事务), MyISAM, Memory InnoDB: 划分页， 用来磁盘和内存交互， 一般16kb InnoDB 分为7个页， 页记录串联单向链表， 生成页目录，主键用二分查找槽，再遍历  索引  索引： 页分裂 ；record_type : 0:普通；1:索引目录；2：最小值；3: 最大值 ，索引即是数据 B+叶子节点存储所有记录， 一般不超过4层 聚簇索引：主键的索引 二级索引：用其他和主键一起，先找出主键，在找聚簇索引 联合索引： 多个其他和主键一起 一个b+索引创建了就不会移动位置 MyISAM： 索引和数据分开存储， 相当都是二级索引 索引的代价： 以空间换时间 全值匹配： 正好所有索引, where 顺序无影响 匹配左边的列，匹配列前缀， 联合索引最左边，或精确的下一个可以用到b+索引 排序不能用索引及情况： 1.联合索引排序列asc和desc一致 2.不在同一索引 3。 where中出现非索引；4不能用复杂表达式 需要回表的数据越多，二级索引效率越低 建立索引规则：1.只为搜索排序分组的列建索引。2. 只为基数大的建立索引；3.索引列类型尽量小；4.字符串鼓励用前缀（但不支持排序） 主键 auto_increment; 避免重复  </description>
     </item>
     
     <item>
       <title>Nginx log 每日切分脚本</title>
-      <link>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</link>
+      <link>https://arboat.github.io/posts/ngxin-log-daily-rotate/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/ngxin-log-daily-rotate/</guid>
+      <guid>https://arboat.github.io/posts/ngxin-log-daily-rotate/</guid>
       <description>Nginx log 每日切分脚本 #!/bin/bash LOG_HOME=&amp;quot;/xxx/logs/&amp;quot; log_file_commaccess=access.log log_file_commerror=error.log pid=/xxx/xxx/nginx.pid yestime=`date -d &#39;-1 day&#39; +%Y%m%d` mv ${LOG_HOME}/${log_file_commaccess} ${LOG_HOME}/${log_file_commaccess}.${yestime} mv ${LOG_HOME}/${log_file_commerror} ${LOG_HOME}/${log_file_commerror}.${yestime} sudo kill -USR1 `cat $pid` // 重启log信号量  添加crontab -e</description>
     </item>
     
     <item>
       <title>redis note</title>
-      <link>https://blog.arboat.top/posts/redis/</link>
+      <link>https://arboat.github.io/posts/redis/</link>
       <pubDate>Fri, 01 May 2020 00:00:01 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/redis/</guid>
+      <guid>https://arboat.github.io/posts/redis/</guid>
       <description>特点及基本结构   高性能， 高可靠， 高可扩展
   五种主要结构
  string : int, raw, embstr list: ziplist + linkedlist hash: ziplist + hashtable zset: ziplist + skiplist set: hashtable + inset    redis 单线程读写指对网络io和数据读写用一个线程，避免多线程并发的控制问题，多路复用模型
@@ -104,10 +104,10 @@ filebeats 需要root权限才能执行
     
     <item>
       <title>Gin note</title>
-      <link>https://blog.arboat.top/posts/gin/</link>
+      <link>https://arboat.github.io/posts/gin/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/gin/</guid>
+      <guid>https://arboat.github.io/posts/gin/</guid>
       <description>Gin   run:
  router := gin.Default() router.Run() // router.Run(&amp;quot;:3000&amp;quot;) for a hard coded port //net/http s := &amp;amp;http.Server{ Addr: confs.FlagSericePort, Handler: router, ReadTimeout: 10 * time.Second, WriteTimeout: 10 * time.Second, MaxHeaderBytes: 1 &amp;lt;&amp;lt; 20, } s.ListenAndServe()    &amp;ldquo;/user/:name/*action&amp;rdquo; name := c.Param(&amp;ldquo;name&amp;rdquo;) action := c.Param(&amp;ldquo;action&amp;rdquo;)
   firstname := c.DefaultQuery(&amp;ldquo;firstname&amp;rdquo;, &amp;ldquo;Guest&amp;rdquo;) lastname :=c.Query(&amp;ldquo;lastname&amp;rdquo;) // shortcut for c.Request.URL.Query().Get(&amp;ldquo;lastname&amp;rdquo;)
@@ -117,10 +117,10 @@ filebeats 需要root权限才能执行
     
     <item>
       <title>gRPC note</title>
-      <link>https://blog.arboat.top/posts/grpc/</link>
+      <link>https://arboat.github.io/posts/grpc/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.arboat.top/posts/grpc/</guid>
+      <guid>https://arboat.github.io/posts/grpc/</guid>
       <description>By default, gRPC uses protocol buffers as the Interface Definition Language (IDL) for describing both the service interface and the structure of the payload messages. It is possible to use other alternatives if desired.一共四种模式
   单项 RPC，即客户端发送一个请求给服务端，从服务端获取一个应答，就像一次普通的函数调用。
   服务端流式 RPC，即客户端发送一个请求给服务端，可获取一个数据流用来读取一系列消息。客户端从返回的数据流里一直读取直到没有更多消息为止。
